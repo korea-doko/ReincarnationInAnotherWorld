@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionTable.xsd" generated="2017-05-12T15:55:06">
+<NPCActionTable>
+<ID>1</ID>
+<NPCActionName>1</NPCActionName>
+<ParentNPC>1</ParentNPC>
+<Desc>desc1</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>2</ID>
+<NPCActionName>2</NPCActionName>
+<ParentNPC>1</ParentNPC>
+<Desc>desc2</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>3</ID>
+<NPCActionName>3</NPCActionName>
+<ParentNPC>2</ParentNPC>
+<Desc>desc3</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>4</ID>
+<NPCActionName>4</NPCActionName>
+<ParentNPC>2</ParentNPC>
+<Desc>desc4</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>5</ID>
+<NPCActionName>5</NPCActionName>
+<ParentNPC>2</ParentNPC>
+<Desc>desc5</Desc>
+</NPCActionTable>
+</dataroot>
