@@ -26,7 +26,6 @@ public class NPCAction  {
     {
         m_choiceList = new List<NPCActionChoice>();
     }
-
     public void Init(int _enumOfNPCActionName)
     {
         m_npcActionName = (NPCActionName)_enumOfNPCActionName;

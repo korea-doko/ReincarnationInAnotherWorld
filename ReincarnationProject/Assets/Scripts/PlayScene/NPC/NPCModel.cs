@@ -14,6 +14,7 @@ public class NPCModel : MonoBehaviour
         NPCActionChoiceFactory NPCChoiceFactory = new NPCActionChoiceFactory();
         NPCActionFactory NPCActionFactory = new NPCActionFactory(NPCChoiceFactory);
         NPCFactory NPCFactory = new NPCFactory(NPCActionFactory);
+
         m_npcList = NPCFactory.GetInitailizedNPCList();
     }
 

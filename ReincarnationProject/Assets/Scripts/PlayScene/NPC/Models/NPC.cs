@@ -39,7 +39,7 @@ public class NPC0 : NPC
 public class NPC1 : NPC
 {
 }
-public class NPC2:NPC
+public class NPC2: NPC
 {
 
 }
