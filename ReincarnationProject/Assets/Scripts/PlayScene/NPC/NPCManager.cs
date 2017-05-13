@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCManager : MonoBehaviour {
+public class NPCManager : MonoBehaviour ,IManager {
 
     private static NPCManager m_inst;
     public NPCManager()
@@ -19,14 +20,23 @@ public class NPCManager : MonoBehaviour {
 
     public NPCModel m_model;
 
-    private void Start()
-    {
-        GameObject temp = new GameObject("NPCModel");
-        temp.AddComponent<NPCModel>();
 
-        m_model = temp.GetComponent<NPCModel>();
+    public void AwakeMgr()
+    {
+        m_model = Utils.MakeObjectWithComponent<NPCModel>("NPCModel", this.gameObject);
         m_model.Init();
-        
+
+    }
+
+    public void StartMgr()
+    {
+
+        Debug.Log("ST NPC");
+    }
+
+    public void UpdateMgr()
+    {
+        Debug.Log("Up NPC");
     }
 
 }
