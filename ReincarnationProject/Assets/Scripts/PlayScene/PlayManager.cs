@@ -6,7 +6,8 @@ using System;
 public enum PlaySceneManagerName
 {
     NPC,
-    Input
+    Input,
+    Flow
 }
 
 public class PlayManager : MonoBehaviour
