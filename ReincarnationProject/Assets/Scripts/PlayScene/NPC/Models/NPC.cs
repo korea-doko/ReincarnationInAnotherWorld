@@ -10,9 +10,14 @@ public enum NPCName
     T2
 }
 
+public interface INPC
+{
+    void Effect();
+    NPCAction GetAction();
+}
 
 [System.Serializable]
-public class NPC 
+public class NPC : INPC
 {
     public NPCName m_name;
     public List<NPCAction> m_actionList;
@@ -29,17 +34,47 @@ public class NPC
     {
         m_actionList.Add(_ac);
     }
+
+    public virtual void Effect()
+    {
+
+    }
+    public virtual NPCAction GetAction()
+    {
+        return m_actionList[0];
+    }
 }
 
 public class NPC0 : NPC
 {
-    
-}
+    public override void Effect()
+    {
 
+    }
+    public override NPCAction GetAction()
+    {
+        return base.GetAction();
+    }
+}
 public class NPC1 : NPC
 {
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        return base.GetAction();
+    }
 }
 public class NPC2: NPC
 {
+    public override void Effect()
+    {
 
+    }
+    public override NPCAction GetAction()
+    {
+        return base.GetAction();
+    }
 }

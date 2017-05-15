@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,8 +13,15 @@ public enum NPCActionName
     T2A2,
     T2A3
 }
+
+public interface INPCAction
+{
+    void EffectNPCACtion();
+    List<NPCActionChoice> GetNPCActionChoiceList();
+}
+
 [System.Serializable]
-public class NPCAction  {
+public class NPCAction : INPCAction {
 
     public List<NPCActionChoice> m_choiceList;
 
@@ -47,27 +55,81 @@ public class NPCAction  {
     {
         m_choiceList.Add(_choice);
     }
+
+    public virtual void EffectNPCACtion()
+    {
+
+    }
+
+    public virtual List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return m_choiceList;
+    }
 }
 
 public class NPCAction0 : NPCAction
 {
-   
-
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
 }
 public class NPCAction1 : NPCAction
 {
-  
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
 }
 public class NPCAction2 : NPCAction
 {
-
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
 }
 public class NPCAction3 : NPCAction
 {
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
 }
 public class NPCAction4 : NPCAction
 {
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
 }
 public class NPCAction5 : NPCAction
 {
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
 }

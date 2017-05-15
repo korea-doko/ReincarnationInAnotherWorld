@@ -18,4 +18,8 @@ public class NPCModel : MonoBehaviour
         m_npcList = NPCFactory.GetInitailizedNPCList();
     }
 
+    public NPC GetNPC(NPCName _name)
+    {
+        return m_npcList[(int)_name];
+    }
 }
