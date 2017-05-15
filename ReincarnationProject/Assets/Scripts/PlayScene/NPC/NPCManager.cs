@@ -28,11 +28,11 @@ public class NPCManager : MonoBehaviour ,IManager {
     }
     public void StartMgr()
     {
-        Debug.Log("ST NPC");
+        //Debug.Log("ST NPC");
     }
     public void UpdateMgr()
     {
-        Debug.Log("Up NPC");
+        //Debug.Log("Up NPC");
     }
 
     public NPC GetNPC(NPCName _name = NPCName.None)
@@ -45,7 +45,7 @@ public class NPCManager : MonoBehaviour ,IManager {
 
         Debug.Log("적당한 친구들이 필요하다. 여기서 조건에 따라서 골라올 수 있게 하기");
 
-        NPCName name = UnityEngine.Random.Range(0, 1) == 0 ? NPCName.T1 : NPCName.T2;
+        NPCName name = UnityEngine.Random.Range(0, 2) == 0 ? NPCName.T1 : NPCName.T2;
 
         return m_model.GetNPC(name);
     }

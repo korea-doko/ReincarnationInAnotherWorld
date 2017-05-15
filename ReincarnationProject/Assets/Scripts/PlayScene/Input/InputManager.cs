@@ -27,7 +27,7 @@ public class InputManager : MonoBehaviour ,IManager{
 
     public void StartMgr()
     {
-        Debug.Log("St Input");
+        //Debug.Log("St Input");
     }
     public void UpdateMgr()
     {

@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class FlowModel : MonoBehaviour
 {
+    public FlowManager m_mgr;
+
     public NPC m_curNPC;
     public NPCAction m_curAction;
     public List<NPCActionChoice> m_curChoiceList;
     public FlowState m_curState;
 
+    public int m_choiceID;
+
     public NPCName m_nextNPC;
     public NPCActionName m_nextNPCAction;
 
-    public void Init()
-    {       
+    public void Init(FlowManager _mgr)
+    {
+        m_mgr = _mgr;
+
         m_curNPC = null;
         m_curAction = null;
         m_curChoiceList = null;
         m_curState = FlowState.GetNPC;
+
+        m_choiceID = -1;
 
         m_nextNPC = NPCName.None;
         m_nextNPCAction = NPCActionName.None;

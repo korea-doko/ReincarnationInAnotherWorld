@@ -64,7 +64,9 @@ public class NPC1 : NPC
     }
     public override NPCAction GetAction()
     {
-        return base.GetAction();
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
     }
 }
 public class NPC2: NPC
@@ -75,6 +77,8 @@ public class NPC2: NPC
     }
     public override NPCAction GetAction()
     {
-        return base.GetAction();
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
     }
 }
