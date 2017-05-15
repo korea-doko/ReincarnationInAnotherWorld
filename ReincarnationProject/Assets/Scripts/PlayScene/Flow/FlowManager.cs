@@ -3,31 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum FlowState
+{
+    GetNPC,
+    // NPC 가져와야 한다.
+    NPCEffect,
+    // NPC의 효과가 있다면 여기서 보여줘야 한다.
+    GetActionInNPC,
+    // NPC에 있는 Action을 가져와야 한다.
+    ActionEffect,
+    // Action의 효과가 있다면 여기서 보여준다.
+    GetChoice,
+    // Action에서 적절한 선택지를 고른다.
+    AwaitPlayer,
+    // 플레이어의 결정을 기다린다.
+    DoChoice,
+    // 플레이어의 결정을 수행한다.
+    NotifyOthers
+    // 다른 친구들에게 알린다.
+}
 public class FlowManager : MonoBehaviour,IManager
 {
-    public enum FlowState
-    {
-        CheckCondition,         
-        // 다음에 NPC가 꼭 와야하는지, Action이 꼭 와야하는지, 게임이 종료가 됐는지 등..
-        GetNPC,
-        // NPC 가져와야 한다.
-        NPCEffect,
-        // NPC의 효과가 있다면 여기서 보여줘야 한다.
-        GetActionInNPC,
-        // NPC에 있는 Action을 가져와야 한다.
-        ActionEffect,
-        // Action의 효과가 있다면 여기서 보여준다.
-        GetChoice,
-        // Action에서 적절한 선택지를 고른다.
-        AwaitPlayer,
-        // 플레이어의 결정을 기다린다.
-        DoChoice,
-        // 플레이어의 결정을 수행한다.
-        NotifyOthers
-        // 다른 친구들에게 알린다.
-    }
-    private FlowState m_curState;
-
+   
+    
     public FlowModel m_model;
     public FlowView m_view;
 
@@ -43,7 +42,7 @@ public class FlowManager : MonoBehaviour,IManager
 
     public void AwakeMgr()
     {
-        m_curState = FlowState.CheckCondition;
+        m_curState = FlowState.GetNPC;
 
         m_model = Utils.MakeObjectWithComponent<FlowModel>("FlowModel", this.gameObject);
         m_model.Init();
@@ -61,9 +60,6 @@ public class FlowManager : MonoBehaviour,IManager
     {
         switch (m_curState)
         {
-            case FlowState.CheckCondition:
-                CheckCondition();
-                break;
             case FlowState.GetNPC:
                 GetNPC();
                 break;
@@ -90,30 +86,30 @@ public class FlowManager : MonoBehaviour,IManager
                 break;
         }
     }
-
-    void CheckCondition()
-    {
-
-    }
     void GetNPC()
     {
+        NPC npc = NPCManager.GetInst.GetNPC(m_model.m_nextNPC);
 
+        m_model.SetNPC(npc);
     }
     void NPCEffect()
     {
-
+        m_model.m_curNPC.Effect();
     }
     void GetActionInNPC()
     {
-
+        NPCAction action = m_model.m_curNPC.GetAction();
+        m_model.SetNPCAction(action);
     }
     void ActionEffect()
     {
-
+        m_model.m_curAction.EffectNPCACtion();
     }
     void GetChoice()
     {
+        List<NPCActionChoice> choiceList = m_model.m_curAction.GetNPCActionChoiceList();
 
+        m_model.SetChoiceList(choiceList);
     }
     void AwaitPlayer()
     {
@@ -126,5 +122,10 @@ public class FlowManager : MonoBehaviour,IManager
     void NotifyOhters()
     {
 
+    }
+
+    void ChangeStateTo(FlowState _state)
+    {
+        m_model.m_state
     }
 }
