@@ -83,6 +83,8 @@ public class NPCActionFactory
                 if (nameST.GetGivenID(parentID) == -1)
                     continue;
 
+                givenID = nameST.m_givenID;
+                
                 choice.m_parentNPCActionName = (NPCActionName)givenID;
                 break;
             }
@@ -147,9 +149,9 @@ public class NPCActionFactory
             {
                 NPCAction action = m_actionList[k];
 
-                if (action.m_npcActionName != choice.m_parentNPCActionName)
+                if (action.m_npcActionName != choice.m_parentNPCActionName || action.m_npcActionName == NPCActionName.None)
                     continue;
-
+                
                 action.AddChoice(choice);
                 break;                                
             }

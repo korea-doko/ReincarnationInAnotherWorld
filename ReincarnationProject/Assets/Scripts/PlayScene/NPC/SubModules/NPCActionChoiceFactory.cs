@@ -69,22 +69,48 @@ public class NPCActionChoiceFactory
         m_fullDic.Clear();
         // 재활용하기 위해서 비워주기
         
-
         ReadDataFromXml();
         //  데이터 읽어오기
 
+        int numOfChoice = System.Enum.GetNames(typeof(NPCActionChoiceName)).Length;
+
+        for (int i = 0; i < numOfChoice; i++)
+        {
+            string name = "NPCActionChoice" + i.ToString();
+            object obj = Activator.CreateInstance(Type.GetType(name));
+            NPCActionChoice choice = (NPCActionChoice)obj;
+            m_actionChoiceList.Add(choice);
+        }
+
+
+
         for (int i = 0; i < m_fullDic.Count; i++)
         {
-            int parentID = int.Parse(m_fullDic[i]["ParentActionName"]);
-            NPCActionChoice choice = new NPCActionChoice(m_fullDic[i]);
+            Dictionary<string, string> data = m_fullDic[i];
 
-            m_actionChoiceList.Add(choice);
+            int id = int.Parse(data["ID"]);
+            int givenID = -1;
 
-            NPCActionChoiceWithParentID choiceWithParent = new NPCActionChoiceWithParentID(choice, parentID);
+            for(int k = 0; k < m_choiceStList.Count;k++)
+            {
+                if (m_choiceStList[k].GetGivenID(id) == -1)
+                    continue;
+
+                givenID = m_choiceStList[k].m_givenID;
+                break;
+            }
+
+            NPCActionChoice choice = m_actionChoiceList[givenID];
+            choice.Init(data);
+            choice.m_npcActionChoiceName = (NPCActionChoiceName)givenID;
+            
+            int parentNPCActionID = int.Parse(data["ParentActionName"]);
+            NPCActionChoiceWithParentID choiceWithParent = new NPCActionChoiceWithParentID(choice, parentNPCActionID);
+            m_choiceWithParentList.Add(choiceWithParent);
         }
         // 데이터 저장 및 다음 Factory에게 부모가 누군지 알려주기 위해서 리스트 따로 만듬.
 
-        for(int i = 0; i < m_actionChoiceList.Count;i++)
+        for (int i = 0; i < m_actionChoiceList.Count;i++)
         {
             NPCActionChoice choice = m_actionChoiceList[i];
 

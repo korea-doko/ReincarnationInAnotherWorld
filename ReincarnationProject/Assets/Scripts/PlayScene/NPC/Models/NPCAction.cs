@@ -44,6 +44,10 @@ public class NPCAction : INPCAction {
     public NPCAction()
     {
         m_choiceList = new List<NPCActionChoice>();
+        m_id = -1;
+        m_npcActionName = NPCActionName.None;
+        m_desc = "none";
+        m_parentNPCName = NPCName.None;
     }
 
     // 스크립트 만들 때마다 생성자 다 써주기 싫어서.. 

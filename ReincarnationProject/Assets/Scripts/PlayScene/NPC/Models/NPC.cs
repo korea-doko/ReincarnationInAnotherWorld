@@ -31,11 +31,12 @@ public class NPC : INPC
     
     public NPC()
     {
+        m_desc = "none";
+        m_npcName = NPCName.None;
         m_actionList = new List<NPCAction>();
     }
     public void Init(Dictionary<string,string> _data)
     {
-        Debug.Log(_data["Desc"]);
         m_desc = _data["Desc"];
     }
     public void AddNPCAction(NPCAction _ac)
