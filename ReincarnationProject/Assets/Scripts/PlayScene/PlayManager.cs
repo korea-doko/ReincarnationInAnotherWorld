@@ -7,7 +7,8 @@ public enum PlaySceneManagerName
 {
     NPC,
     Input,
-    Flow
+    Flow,
+    Envi
 }
 
 public class PlayManager : MonoBehaviour
@@ -27,6 +28,7 @@ public class PlayManager : MonoBehaviour
 
     private void Awake()
     {
+        
         m_numOfMgr = System.Enum.GetNames(typeof(PlaySceneManagerName)).Length;
         m_mgrAry = new IManager[m_numOfMgr];
 

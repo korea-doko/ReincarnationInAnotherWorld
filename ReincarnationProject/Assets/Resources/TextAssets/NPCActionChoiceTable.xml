@@ -1,78 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceTable.xsd" generated="2017-05-12T15:38:47">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceTable.xsd" generated="2017-05-16T14:35:31">
 <NPCActionChoiceTable>
 <ID>1</ID>
 <NPCActionChoiceName>1</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
+<Desc>힘들지만 바로 모험가 길드로 돌아간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>2</ID>
-<NPCActionChoiceName>T1A2C1</NPCActionChoiceName>
-<ParentActionName>2</ParentActionName>
+<NPCActionChoiceName>2</NPCActionChoiceName>
+<ParentActionName>1</ParentActionName>
+<Desc>장비의 점검이 우선이다. 대장간으로 먼저 가자.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>3</ID>
-<NPCActionChoiceName>T1A2C2</NPCActionChoiceName>
-<ParentActionName>2</ParentActionName>
+<NPCActionChoiceName>3</NPCActionChoiceName>
+<ParentActionName>1</ParentActionName>
+<Desc>상처 점검이 먼저다. 수도원으로 가자.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>4</ID>
-<NPCActionChoiceName>T2A1C1</NPCActionChoiceName>
-<ParentActionName>3</ParentActionName>
+<NPCActionChoiceName>4</NPCActionChoiceName>
+<ParentActionName>1</ParentActionName>
+<Desc>식량 보급이 우선이다. 식료품점으로 가자.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>5</ID>
-<NPCActionChoiceName>T2A1C2</NPCActionChoiceName>
-<ParentActionName>3</ParentActionName>
+<NPCActionChoiceName>5</NPCActionChoiceName>
+<ParentActionName>1</ParentActionName>
+<Desc>고가의 마법도구를 먼저 확인한다. 마법도구점으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>6</ID>
-<NPCActionChoiceName>T2A1C3</NPCActionChoiceName>
-<ParentActionName>3</ParentActionName>
+<NPCActionChoiceName>6</NPCActionChoiceName>
+<ParentActionName>1</ParentActionName>
+<Desc>아직 도시 바깥에서 해야할 것을 다 하지 못했다.  숲으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>7</ID>
-<NPCActionChoiceName>T2A2C1</NPCActionChoiceName>
-<ParentActionName>4</ParentActionName>
+<NPCActionChoiceName>7</NPCActionChoiceName>
+<ParentActionName>1</ParentActionName>
+<Desc>도시에 들어온 것을 경비대에 보고하자.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>8</ID>
-<NPCActionChoiceName>T2A2C2</NPCActionChoiceName>
-<ParentActionName>4</ParentActionName>
+<NPCActionChoiceName>8</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>모험가 길드로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>9</ID>
-<NPCActionChoiceName>T2A2C3</NPCActionChoiceName>
-<ParentActionName>4</ParentActionName>
+<NPCActionChoiceName>9</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>대장간으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>10</ID>
-<NPCActionChoiceName>T2A2C4</NPCActionChoiceName>
-<ParentActionName>4</ParentActionName>
+<NPCActionChoiceName>10</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>수도원으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>11</ID>
-<NPCActionChoiceName>T2A3C1</NPCActionChoiceName>
-<ParentActionName>5</ParentActionName>
+<NPCActionChoiceName>11</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>식료품점으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>12</ID>
-<NPCActionChoiceName>T2A3C2</NPCActionChoiceName>
-<ParentActionName>5</ParentActionName>
+<NPCActionChoiceName>12</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>마법 도구점으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>13</ID>
-<NPCActionChoiceName>T2A3C3</NPCActionChoiceName>
-<ParentActionName>5</ParentActionName>
+<NPCActionChoiceName>13</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>숲으로 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>14</ID>
-<NPCActionChoiceName>T2A3C4</NPCActionChoiceName>
-<ParentActionName>5</ParentActionName>
+<NPCActionChoiceName>14</NPCActionChoiceName>
+<ParentActionName>2</ParentActionName>
+<Desc>경비대에 간다.</Desc>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>15</ID>
-<NPCActionChoiceName>T2A3C5</NPCActionChoiceName>
+<NPCActionChoiceName>15</NPCActionChoiceName>
+<ParentActionName>3</ParentActionName>
+<Desc>숲 속으로 들어가서 무엇이든 찾아본다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>16</ID>
+<NPCActionChoiceName>16</NPCActionChoiceName>
+<ParentActionName>3</ParentActionName>
+<Desc>숲 속은 위험하다. 어떤 몬스터가 있을지 모른다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>17</ID>
+<NPCActionChoiceName>17</NPCActionChoiceName>
+<ParentActionName>3</ParentActionName>
+<Desc>차라리 주변에서 사람이 있는지 찾아보자.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>18</ID>
+<NPCActionChoiceName>18</NPCActionChoiceName>
+<ParentActionName>4</ParentActionName>
+<Desc>앞에 보이는 접수원에게 다가간다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>19</ID>
+<NPCActionChoiceName>19</NPCActionChoiceName>
+<ParentActionName>4</ParentActionName>
+<Desc>모험가 길드에서 볼 일은 없다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>20</ID>
+<NPCActionChoiceName>20</NPCActionChoiceName>
 <ParentActionName>5</ParentActionName>
+<Desc>성당에 있는 사제에게 가본다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>21</ID>
+<NPCActionChoiceName>21</NPCActionChoiceName>
+<ParentActionName>5</ParentActionName>
+<Desc>아직은 성당에서 볼 일은 없다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>22</ID>
+<NPCActionChoiceName>22</NPCActionChoiceName>
+<ParentActionName>6</ParentActionName>
+<Desc>주인으로 보이는 여자에게 다가간다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>23</ID>
+<NPCActionChoiceName>23</NPCActionChoiceName>
+<ParentActionName>6</ParentActionName>
+<Desc>아직은 볼 일이 없다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>24</ID>
+<NPCActionChoiceName>24</NPCActionChoiceName>
+<ParentActionName>7</ParentActionName>
+<Desc>앞에 보이는 마법사에게 다가간다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>25</ID>
+<NPCActionChoiceName>25</NPCActionChoiceName>
+<ParentActionName>7</ParentActionName>
+<Desc>아직은 볼 일이 없다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>26</ID>
+<NPCActionChoiceName>26</NPCActionChoiceName>
+<ParentActionName>9</ParentActionName>
+<Desc>앞에 보이는 대장장이에게 다가간다.</Desc>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>27</ID>
+<NPCActionChoiceName>27</NPCActionChoiceName>
+<ParentActionName>9</ParentActionName>
+<Desc>아직 볼 일이 없다.</Desc>
 </NPCActionChoiceTable>
 </dataroot>

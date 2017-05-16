@@ -17,10 +17,10 @@
 "/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACgHzvlPfhsSroTqPC431CYAAAAAJ6Y9SJ17uRAAAAAAAAAAABOAFAA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACgHzvlPfhsSroTqPC431CYAAAAAKUb/2nz7uRAAAAAAAAAAABOAFAA
 QwBBAGMAdABpAG8AbgBUAGEAYgBsAGUAAAAAAAAA9UERzff3L0+0u7RoSuL+hQcA
 AACgHzvlPfhsSroTqPC431CYSQBEAAAAAAAAALsRhiDnDENLn5v7qXWSve4AAAAA
-SbpmGnXu5EAAAAAAAAAAAE4AUABDAEEAYwB0AGkAbwBuAE4AYQBtAGUAVABhAGIA
+WvMeafPu5EAAAAAAAAAAAE4AUABDAEEAYwB0AGkAbwBuAE4AYQBtAGUAVABhAGIA
 bABlAAAAAAAAACp9UoVUI6NKjW4lVW8b/dAHAAAAuxGGIOcMQ0ufm/updZK97kkA
 RAAAAAAAAAByy+pNMSvAQq8YqWe6q2gABwAAALsRhiDnDENLn5v7qXWSve5OAFAA
 QwBBAGMAdABpAG8AbgBOAGEAbQBlAAAAAAAAADzcb4q2f09FtPOd+VQvBxoHAAAA
@@ -72,7 +72,7 @@ AAAAAAAADAAAAAUAAAAAAAAAAAAAAAAAAAAAAA==
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="PNxvirZ/T0W08535VC8HGg==
 "/>
-<od:fieldProperty name="ColumnWidth" type="3" value="1545"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="2385"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="2"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
@@ -102,7 +102,7 @@ AAAAAAAADAAAAAUAAAAAAAAAAAAAAAAAAAAAAA==
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="j11lM9VBHU+EIC8TiOsSWg==
 "/>
-<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="885"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="3"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
@@ -130,7 +130,7 @@ AAAAAAAADAAAAAUAAAAAAAAAAAAAAAAAAAAAAA==
 <xsd:element name="Desc" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
 <xsd:annotation>
 <xsd:appinfo>
-<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="4665"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="4"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Required" type="1" value="0"/>

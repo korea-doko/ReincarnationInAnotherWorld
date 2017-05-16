@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionTable.xsd" generated="2017-05-12T15:55:06">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionTable.xsd" generated="2017-05-16T14:42:16">
+<NPCActionTable>
+<ID>6</ID>
+<NPCActionName>6</NPCActionName>
+<ParentNPC>7</ParentNPC>
+<Desc>여러가지 향긋한 냄새가 난다. 온갖 식료품이 가득했다. 식료품점에서 무엇을 할까?</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>7</ID>
+<NPCActionName>7</NPCActionName>
+<ParentNPC>8</ParentNPC>
+<Desc>신비로운 느낌이 충만한 곳이다. 마법적인 힘 또한 느껴졌다. 이곳에서 무엇을 할까?</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>9</ID>
+<NPCActionName>9</NPCActionName>
+<ParentNPC>5</ParentNPC>
+<Desc>뜨거운 열기가 느껴진다. 철을 두들기는 소리가 요란하게 들린다. 이곳에서 무엇을 할까?</Desc>
+</NPCActionTable>
 <NPCActionTable>
 <ID>1</ID>
 <NPCActionName>1</NPCActionName>
-<ParentNPC>1</ParentNPC>
-<Desc>desc1</Desc>
+<ParentNPC>2</ParentNPC>
+<Desc>도시에 도착했다. 마을 밖은 위험하고 피곤했다. 도시에 도착하니 마음이 편해졌다. 우선적으로 무엇을 해야할까?</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>2</ID>
 <NPCActionName>2</NPCActionName>
-<ParentNPC>1</ParentNPC>
-<Desc>desc2</Desc>
+<ParentNPC>2</ParentNPC>
+<Desc>도시 안에서 필요한 일은 다 한것 같다. 그렇다면 무엇을 하면 좋을까?</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>3</ID>
 <NPCActionName>3</NPCActionName>
-<ParentNPC>2</ParentNPC>
-<Desc>desc3</Desc>
+<ParentNPC>3</ParentNPC>
+<Desc>도시 근처에 있는 숲으로 왔다. 무성한 나무들 사이로 빛이 조금씩 들어왔다. 그렇게 위험해 보이지는 않는다. 무엇을 해야할까?</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>4</ID>
 <NPCActionName>4</NPCActionName>
-<ParentNPC>2</ParentNPC>
-<Desc>desc4</Desc>
+<ParentNPC>4</ParentNPC>
+<Desc>큰 나무로 된 현판이 걸려있다. 그곳에는 멋진 글씨체로 &apos;모험가 길드&apos;라고 적혀 있었다. 무엇을 할까?</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>5</ID>
 <NPCActionName>5</NPCActionName>
-<ParentNPC>2</ParentNPC>
-<Desc>desc5</Desc>
+<ParentNPC>6</ParentNPC>
+<Desc>높이 솟은 성당의 지붕은 그 자체로 장대한 위엄이 느껴졌다. 성스러운 힘이 이곳에서 느껴진다. 무엇을 해야할까?</Desc>
 </NPCActionTable>
 </dataroot>

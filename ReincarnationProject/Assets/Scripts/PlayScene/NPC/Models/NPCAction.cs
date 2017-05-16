@@ -6,12 +6,22 @@ using UnityEngine;
 public enum NPCActionName
 {
     None,
-
-    T1A1,
-    T1A2,
-    T2A1,
-    T2A2,
-    T2A3
+    
+    //City
+    CityAction1,
+    CityAction2,
+    //Forest
+    ForestAction1,
+    //Guild
+    GuildAction1,
+    //Cathedral
+    CathedralAction1,
+    //GroceryStore
+    GroceryStoreAction1,
+    //MagicStore
+    MagicStoreAction1,
+    //Smithy
+    SmithyAction1
 }
 
 public interface INPCAction
@@ -27,30 +37,23 @@ public class NPCAction : INPCAction {
 
     public int m_id;
     public NPCActionName m_npcActionName;
-    public NPCName m_parentNPCName;
     public string m_desc;
+    public NPCName m_parentNPCName;     // 나중에 NPC 이름 확인가능 할 때 따로 초기화 해준다.    
+
 
     public NPCAction()
     {
         m_choiceList = new List<NPCActionChoice>();
     }
-    public void Init(int _enumOfNPCActionName)
-    {
-        m_npcActionName = (NPCActionName)_enumOfNPCActionName;
-    }
-    public bool SetData(Dictionary<string,string> _data)
-    {
-        NPCActionName inputName = (NPCActionName)System.Enum.Parse(typeof(NPCActionName), _data["NPCActionName"]);
 
-        if ((int)inputName != (int)m_npcActionName)
-            return false;
-
+    // 스크립트 만들 때마다 생성자 다 써주기 싫어서.. 
+    public void Init(Dictionary<string,string> _data)
+    {
         m_id = int.Parse(_data["ID"]);
-        m_parentNPCName = (NPCName)System.Enum.Parse(typeof(NPCName), _data["ParentNPC"]);
         m_desc = _data["Desc"];
-
-        return true;
     }
+
+
     public void AddChoice(NPCActionChoice _choice)
     {
         m_choiceList.Add(_choice);
@@ -60,7 +63,6 @@ public class NPCAction : INPCAction {
     {
 
     }
-
     public virtual List<NPCActionChoice> GetNPCActionChoiceList()
     {
         return m_choiceList;
@@ -123,6 +125,39 @@ public class NPCAction4 : NPCAction
     }
 }
 public class NPCAction5 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction6 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction7 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction8 : NPCAction
 {
     public override void EffectNPCACtion()
     {
