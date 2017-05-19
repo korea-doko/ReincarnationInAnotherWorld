@@ -40,7 +40,7 @@ public class FlowManager : MonoBehaviour,IManager
 
     public void AwakeMgr()
     {
-       
+
 
         m_model = Utils.MakeObjectWithComponent<FlowModel>("FlowModel", this.gameObject);
         m_model.Init(this);

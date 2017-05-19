@@ -106,18 +106,19 @@ public class NPCActionFactory
             string name = "NPCAction" + i.ToString();
             object obj = Activator.CreateInstance(Type.GetType(name));
             NPCAction action = (NPCAction)obj;
-            m_actionList.Add(action);
+            m_actionList.Add(action);            
         }
         // 스크립트가 다 따로 있기 때문에 현재 이런 방식으로 하고 있음.
         // 스크립트 이름이 다르기 때문에 만들었음.
         // 순서는 givenID를 Enum Casting한 것과 똑같다.
-
+        
 
         for (int i = 0; i < m_fullDic.Count; i++)
         {
             Dictionary<string, string> data = m_fullDic[i];
 
-            int id = int.Parse(data["ID"]);
+            int id = int.Parse(data["NPCActionName"]);
+           
             int givenID = -1;
 
             for (int k = 0; k < m_actionStList.Count; k++)
@@ -128,8 +129,10 @@ public class NPCActionFactory
                 givenID = m_actionStList[k].m_givenID;
                 break;
             }
+            
 
             NPCAction properAction = m_actionList[givenID];
+            
             properAction.Init(data);
             // 몇 개의 데이터만 초기화 된다. F12들어가서 보면 확인가능
             properAction.m_npcActionName = (NPCActionName)givenID;

@@ -5,23 +5,82 @@ using UnityEngine;
 
 public enum NPCActionName
 {
-    None,
+
+     None
     
-    //City
-    CityAction1,
-    CityAction2,
-    //Forest
-    ForestAction1,
-    //Guild
-    GuildAction1,
-    //Cathedral
-    CathedralAction1,
-    //GroceryStore
-    GroceryStoreAction1,
-    //MagicStore
-    MagicStoreAction1,
-    //Smithy
-    SmithyAction1
+    ,PlayerIntro1
+    ,CityIntro1
+    ,CityIntro2
+    ,ForestIntro1
+    ,ForestNormal1
+    ,ForestNormal2
+    ,ForestNormal3
+    ,ForestNormal4
+    ,ForestNormal5
+    ,ForestNormal6
+    ,ForestNormal7
+    ,ForestToGuard1
+    ,ForestToHunter1
+    ,GuildIntro1
+    ,SmithyIntro1
+    ,SmithyIntro2
+    ,CathedralIntro1
+    ,CathedralIntro2
+    ,GroceryStoreIntro1
+    ,GroceryStoreIntro2
+    ,MagicStoreIntro1
+    ,MagicStoreIntro2
+    ,MarkIntro1
+    ,MarkNormal1
+    ,EllenaIntro1
+    ,EllenaIntro2
+    ,EllenaNormal1
+    ,EllenaNormal2
+    ,EllenaQuest1
+    ,EllenaQuest2
+    ,EllenaQuestAccept1
+    ,EllenaQuestComplete1
+    ,EllenaQuestComplete2
+    ,DaisyIntro1
+    ,DaisyNormal1
+    ,DaisyNormal2
+    ,DaisySelling1
+    ,PeytonIntro1
+    ,PeytonNormal1
+    ,PeytonNormal2
+    ,PeytonSellingSword1
+    ,PeytonSellingArmor1
+    ,DarionIntro1
+    ,DarionNormal1
+    ,DarionSellingSword1
+    ,DarionSellingArmor1
+    ,JeromeIntro1
+    ,JeromeNormal1
+    ,JeromeHealing1
+    ,JeromeSelling1
+    ,AllanStealing1
+    ,AllanCaptured1
+    ,CristobalIntro1
+    ,CristobalGone1
+    ,GarrettIntro1
+    ,GarrettGone1
+    ,DeepForestIntro1
+    ,DeepForestIntro2
+    ,DeepForestNormal1
+    ,DeepForestNormal2
+    ,DeepForestNormal3
+    ,DeepForestNormal4
+    ,DeepForestMeetKobold1
+    ,DeepForestMeetKobold2
+    ,DeepForestMeetTroll1
+    ,DeepForestMeetTroll2
+    ,KoboldIntro1
+    ,KoboldNormal1
+    ,KoboldDie1
+    ,TrollIntro1
+    ,TrollNormal1
+    ,TrollDie1
+    ,DeepForestRunaway1
 }
 
 public interface INPCAction
@@ -81,6 +140,7 @@ public class NPCAction0 : NPCAction
     }
     public override List<NPCActionChoice> GetNPCActionChoiceList()
     {
+
         return base.GetNPCActionChoiceList();
     }
 }
@@ -172,3 +232,752 @@ public class NPCAction8 : NPCAction
         return base.GetNPCActionChoiceList();
     }
 }
+public class NPCAction9 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction10 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+public class NPCAction11 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction12: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction13: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction14: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction15: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction16: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction17 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction18: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction19: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction20 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+public class NPCAction21: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction22: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction23: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction24: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction25: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction26: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction27: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction28: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction29: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction30: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+
+public class NPCAction31 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction32: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction33: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction34: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction35: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction36: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction37: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction38: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction39: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction40: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+
+public class NPCAction41: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction42 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction43: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction44: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction45: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction46: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction47: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction48: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction49: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction50: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+
+public class NPCAction51: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction52: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction53 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction54: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction55: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction56: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction57: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction58: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction59: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction60: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+
+public class NPCAction61: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction62: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction63: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction64: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction65: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction66: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction67: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction68: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction69: NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction70 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+
+public class NPCAction71 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction72 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+public class NPCAction73 : NPCAction
+{
+    public override void EffectNPCACtion()
+    {
+        base.EffectNPCACtion();
+    }
+    public override List<NPCActionChoice> GetNPCActionChoiceList()
+    {
+        return base.GetNPCActionChoiceList();
+    }
+}
+
+
+

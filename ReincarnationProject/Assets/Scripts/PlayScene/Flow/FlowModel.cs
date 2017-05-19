@@ -27,13 +27,17 @@ public class FlowModel : MonoBehaviour
 
         m_choiceID = -1;
 
-        m_nextNPC = NPCName.None;
-        m_nextNPCAction = NPCActionName.None;
+        m_nextNPC = NPCName.Player;
+        m_nextNPCAction = NPCActionName.PlayerIntro1;
     }
 
     public void SetNPC(NPC _curNPC)
     {
         m_curNPC = _curNPC;
+
+        m_nextNPC = NPCName.None;
+        m_nextNPCAction = NPCActionName.None;
+
     }
     public void SetNPCAction(NPCAction _curNPCAction)
     {

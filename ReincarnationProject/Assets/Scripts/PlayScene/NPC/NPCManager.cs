@@ -45,7 +45,7 @@ public class NPCManager : MonoBehaviour ,IManager {
 
         Debug.Log("적당한 친구들이 필요하다. 여기서 조건에 따라서 골라올 수 있게 하기");
 
-        int random = UnityEngine.Random.Range(0, System.Enum.GetNames(typeof(NPCName)).Length);
+        int random = UnityEngine.Random.Range(1, System.Enum.GetNames(typeof(NPCName)).Length);
 
         NPCName name = (NPCName)random;
         

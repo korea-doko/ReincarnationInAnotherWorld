@@ -14,6 +14,18 @@ public enum NPCName
     Cathedral,
     GroceryStore,
     MagicStore,
+    Mark,
+    Ellena,
+    Daisy,
+    Peyton,
+    Darion,
+    Jerome,
+    Allan,
+    Cristobal,
+    Garrett,
+    Kobold,
+    Troll,
+    DeepForest,
 }
 
 public interface INPC
@@ -157,6 +169,162 @@ public class NPC7 : NPC
     }
 }
 public class NPC8 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC9 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC10 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC11 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC12 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC13 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC14 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC15 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC16 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC17 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC18 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC19 : NPC
+{
+    public override void Effect()
+    {
+
+    }
+    public override NPCAction GetAction()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, m_actionList.Count);
+
+        return m_actionList[randomIndex];
+    }
+}
+public class NPC20 : NPC
 {
     public override void Effect()
     {

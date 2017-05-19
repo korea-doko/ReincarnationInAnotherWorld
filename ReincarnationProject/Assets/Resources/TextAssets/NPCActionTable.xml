@@ -1,51 +1,441 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionTable.xsd" generated="2017-05-16T14:42:16">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionTable.xsd" generated="2017-05-19T15:27:12">
 <NPCActionTable>
 <ID>6</ID>
 <NPCActionName>6</NPCActionName>
-<ParentNPC>7</ParentNPC>
-<Desc>여러가지 향긋한 냄새가 난다. 온갖 식료품이 가득했다. 식료품점에서 무엇을 할까?</Desc>
+<ParentNPC>3</ParentNPC>
+<Desc>아침의 숲은 얕은 안개가 꼈다. 이런 날 숲 속으로 들어간다는 것은 매우 큰 위험이 있을 것이다. </Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>7</ID>
 <NPCActionName>7</NPCActionName>
-<ParentNPC>8</ParentNPC>
-<Desc>신비로운 느낌이 충만한 곳이다. 마법적인 힘 또한 느껴졌다. 이곳에서 무엇을 할까?</Desc>
+<ParentNPC>3</ParentNPC>
+<Desc>아침의 숲은 고요했다. 많은 생물은 잠에 들어 있을 것이다. </Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>9</ID>
 <NPCActionName>9</NPCActionName>
+<ParentNPC>3</ParentNPC>
+<Desc>태양이 높게 뜬 오후, 숲은 더 푸르게 보였다. 성 위에서 바라보면 아마도 초록빛 바다처럼 보일 것 같다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>14</ID>
+<NPCActionName>14</NPCActionName>
+<ParentNPC>3</ParentNPC>
+<Desc>숲 주변에서 사냥꾼으로 보이는 사람이 있었다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>15</ID>
+<NPCActionName>15</NPCActionName>
+<ParentNPC>4</ParentNPC>
+<Desc>큰 나무로 된 판이 걸려있다. 그곳에는 멋진 글씨체로 ‘모험가 길드’라고 적혀 있었다. 무엇을 할까?</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>16</ID>
+<NPCActionName>16</NPCActionName>
 <ParentNPC>5</ParentNPC>
-<Desc>뜨거운 열기가 느껴진다. 철을 두들기는 소리가 요란하게 들린다. 이곳에서 무엇을 할까?</Desc>
+<Desc>처음으로 본 도시의 대장간이었다. 용광로의 연기가 굴뚝에서 끊임없이 솟구쳤다. 대장간 안에는 여러 명의 대장장이가 있었다. 아마도 큰 규모의 대장간인 것 같다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>17</ID>
+<NPCActionName>17</NPCActionName>
+<ParentNPC>5</ParentNPC>
+<Desc>뜨거운 열기가 느껴진다. 철을 두들기는 소리가 요란하게 들리고 있다. 이곳에서 무엇을 할까?</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>18</ID>
+<NPCActionName>18</NPCActionName>
+<ParentNPC>6</ParentNPC>
+<Desc>처음으로 본 성당이다. 높이 솟아오른 고딕형의 지붕은 하늘 높이 찌르는 모습이었다. 흰 색의 돌로 이루어진 외벽은 깨끗하게 보였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>19</ID>
+<NPCActionName>19</NPCActionName>
+<ParentNPC>6</ParentNPC>
+<Desc>성당 주변은 깨끗했다. 흰 색의 벽과 깨끗한 거리. 그 두 가지의 모습은 언제나 차분하게 보였다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>20</ID>
+<NPCActionName>20</NPCActionName>
+<ParentNPC>7</ParentNPC>
+<Desc>도시 안에 향긋한 냄새가 났다. 그 이유는 식료품점에 있는 많은 음식 때문이었다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>21</ID>
+<NPCActionName>21</NPCActionName>
+<ParentNPC>7</ParentNPC>
+<Desc>여러 향긋한 냄새가 난다. 온갖 식료품이 가득했다. 식료품점에서 무엇을 할까?</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>22</ID>
+<NPCActionName>22</NPCActionName>
+<ParentNPC>8</ParentNPC>
+<Desc>신비로운 느낌이 가득한 곳이었다. 처음 보는 물건들이 가득했다. 또한 눈에 익은 물건들도 많이 있었다. 마법상점이라는 것을 고려했을 때 어떠한 것도 평범하다고 생각되지 않았다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>23</ID>
+<NPCActionName>23</NPCActionName>
+<ParentNPC>8</ParentNPC>
+<Desc>언제와도 마법도구점은 신비함이 넘쳤다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>24</ID>
+<NPCActionName>24</NPCActionName>
+<ParentNPC>9</ParentNPC>
+<Desc>&quot; 도시에서 처음 보는 모험가인데, 무슨 일로 도시에 왔지?&quot; </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>25</ID>
+<NPCActionName>25</NPCActionName>
+<ParentNPC>9</ParentNPC>
+<Desc>&quot; 저번에 봤던 모험가로군, 조심히 모험을 하도록 하게나. &quot; </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>26</ID>
+<NPCActionName>26</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot;안녕, 모험가 길드는 처음이지?, 새로운 모험가는 언제나 환영이야!&quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>27</ID>
+<NPCActionName>27</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 또 왔네, 오늘은 무슨 일을 도와줄까? &quot; </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>28</ID>
+<NPCActionName>28</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 무슨 일로 온거야? &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>29</ID>
+<NPCActionName>29</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 그래, 뭘 도와줄까? &quot; </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>30</ID>
+<NPCActionName>30</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 도시에 있는 소매치기 범을 잡아줘! &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>31</ID>
+<NPCActionName>31</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 코볼트를 잡아줘!&quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>32</ID>
+<NPCActionName>32</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 조심히 임무를 완수하길 바래! &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>33</ID>
+<NPCActionName>33</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 소매치기 범을 잡았잖아? 대단한 걸? &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>34</ID>
+<NPCActionName>34</NPCActionName>
+<ParentNPC>10</ParentNPC>
+<Desc>&quot; 코볼트를 잡았네. 자, 여기 보상이야! &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>35</ID>
+<NPCActionName>35</NPCActionName>
+<ParentNPC>11</ParentNPC>
+<Desc>&quot; 안녕, 나는 식료품점 주인 데이지라고 해. 맛있는 물건을 팔고 있어. 자주 오길 바랄게! &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>36</ID>
+<NPCActionName>36</NPCActionName>
+<ParentNPC>11</ParentNPC>
+<Desc>&quot; 안녕? 또 왔네, 오늘은 좋은 물건이 많아.&quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>37</ID>
+<NPCActionName>37</NPCActionName>
+<ParentNPC>11</ParentNPC>
+<Desc>&quot; 좋은 날이지? 맛있는 걸 사가라구! &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>38</ID>
+<NPCActionName>38</NPCActionName>
+<ParentNPC>11</ParentNPC>
+<Desc>&quot; 이 빵을 사가는게 어때? &quot; </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>39</ID>
+<NPCActionName>39</NPCActionName>
+<ParentNPC>12</ParentNPC>
+<Desc>&quot; 처음 보는 모험가로군, 이 대장간엔 처음이지? 어서오게 나는 수석 대장장이 페이튼이라고 하네. &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>40</ID>
+<NPCActionName>40</NPCActionName>
+<ParentNPC>12</ParentNPC>
+<Desc>&quot; 그래, 무슨 일로 대장간까지 왔는가? &quot; </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>41</ID>
+<NPCActionName>41</NPCActionName>
+<ParentNPC>12</ParentNPC>
+<Desc>&quot; 좋은 물건이 있는데, 봐 볼 생각이 있는가? &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>42</ID>
+<NPCActionName>42</NPCActionName>
+<ParentNPC>12</ParentNPC>
+<Desc>&quot; 이 검으로 말하자면 말이야… 아주 아주 좋다네.&quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>43</ID>
+<NPCActionName>43</NPCActionName>
+<ParentNPC>12</ParentNPC>
+<Desc>&quot; 이 갑옷이 상당히 좋다네, 아주 저렴한 가격에 팔고 있어. &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>44</ID>
+<NPCActionName>44</NPCActionName>
+<ParentNPC>13</ParentNPC>
+<Desc>&quot; 처음 보는 모험가군? 이곳엔 무슨 볼 일이 있지? &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>45</ID>
+<NPCActionName>45</NPCActionName>
+<ParentNPC>13</ParentNPC>
+<Desc>&quot; 며칠 전 본 기억이 나는 것 같아. 환영하네 모험가 친구. &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>46</ID>
+<NPCActionName>46</NPCActionName>
+<ParentNPC>13</ParentNPC>
+<Desc>&quot; 이 검은 불의 정령 샐러맨더의 힘을 가지고 있다네. &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>47</ID>
+<NPCActionName>47</NPCActionName>
+<ParentNPC>13</ParentNPC>
+<Desc>&quot; 이 방어구는 가벼워 지는 마법이 걸려 있다네. &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>48</ID>
+<NPCActionName>48</NPCActionName>
+<ParentNPC>14</ParentNPC>
+<Desc>&quot; 처음 보는 모험가군, 나는 사제 제롬이라고 하네. 신은 모두를 환영하신다네. &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>49</ID>
+<NPCActionName>49</NPCActionName>
+<ParentNPC>14</ParentNPC>
+<Desc>&quot; 이 성당엔 무슨 일로 왔지? &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>50</ID>
+<NPCActionName>50</NPCActionName>
+<ParentNPC>14</ParentNPC>
+<Desc>제롬이 조용하게 중얼거렸다. 그러자 제롬의 손에서는 성스러운 빛이 보였다. 그리고 나에게 손이 다가오자 상처 입었던 곳의 통증이 사라지기 시작했다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>51</ID>
+<NPCActionName>51</NPCActionName>
+<ParentNPC>14</ParentNPC>
+<Desc>&quot; 성당에서 파는 것은 체력 포션이 있다네. 구입할 생각이 있는가?&quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>52</ID>
+<NPCActionName>52</NPCActionName>
+<ParentNPC>15</ParentNPC>
+<Desc>&quot; 하하, 고마워. 풋내기 모험가님! &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>53</ID>
+<NPCActionName>53</NPCActionName>
+<ParentNPC>15</ParentNPC>
+<Desc>&quot; 이거 놔, 내가 뭘 잘못했다고 그래? &quot;</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>54</ID>
+<NPCActionName>54</NPCActionName>
+<ParentNPC>16</ParentNPC>
+<Desc>이 근처에서 본 적이 없는 사람이구만, 나는 사냥꾼 크리스토발이네.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>55</ID>
+<NPCActionName>55</NPCActionName>
+<ParentNPC>16</ParentNPC>
+<Desc>알겠네. 이 근처에선 조심하도록</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>56</ID>
+<NPCActionName>56</NPCActionName>
+<ParentNPC>17</ParentNPC>
+<Desc>이 근처에서 처음 보는 사람이군, 나는 도시의 경비대장 개럿이다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>57</ID>
+<NPCActionName>57</NPCActionName>
+<ParentNPC>17</ParentNPC>
+<Desc>그렇구만, 숲 속은 몬스터가 있으니 조심하게.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>58</ID>
+<NPCActionName>58</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>처음 와 본 숲의 깊은 곳. 햇빛이 들지 않아서 그런지 축축한 이끼가 많이 있었다. 발이 미끄러워서 조심해야했다. 어두운 숲에선 강한 생명력이 느껴졌다. 그와 동시에 어두운 것도 느껴졌다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>59</ID>
+<NPCActionName>59</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>깊은 숲, 태양의 빛은 나뭇잎에 가려져 잘 들어오지 않았다. 그렇기 때문에 숲 속은 어두웠다. 이런 곳은 언제나 주의해야했다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>60</ID>
+<NPCActionName>60</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>길을 걷다보니, 멀지 않은 곳에서 무엇인가 눈길을 끄는 것이 있다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>61</ID>
+<NPCActionName>61</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>무심코 발을 움직였던 곳 근처 그곳에는 신비롭게 생긴 것이 보였다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>62</ID>
+<NPCActionName>62</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>주변 나무를 자세히 봤다. 일부는 긁혀져 있었고, 일부는 부러져 있었다. 어떠한 파괴적인 생물이 이곳에는 존재했다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>63</ID>
+<NPCActionName>63</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>똥으로 보이는 것이 있었다. 명백하게 이 근처는 그 생물의 영향권이었다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>64</ID>
+<NPCActionName>64</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>바로 코 앞 코볼트가 있다. 아직은 내 존재를 눈치채지 못한 것 같다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>65</ID>
+<NPCActionName>65</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>정신 없이 숲 속을 탐험하던 도중 코볼트를 만났다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>66</ID>
+<NPCActionName>66</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>멀지 않은 곳에 트롤이 있다. 아직까지 내 존재를 눈치 채지 못했다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>67</ID>
+<NPCActionName>67</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>트롤과 만나버렸다. 위험한 상황이다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>68</ID>
+<NPCActionName>68</NPCActionName>
+<ParentNPC>18</ParentNPC>
+<Desc>처음 보는 코볼트였다. 알 수 없는 언어를 내뱉었다. 코볼트도 나에게 적대심을 가지고 있는 것이 눈에 보였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>69</ID>
+<NPCActionName>69</NPCActionName>
+<ParentNPC>18</ParentNPC>
+<Desc>생각보다 끈질긴 코볼트였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>70</ID>
+<NPCActionName>70</NPCActionName>
+<ParentNPC>18</ParentNPC>
+<Desc>힘겨운 상대였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>71</ID>
+<NPCActionName>71</NPCActionName>
+<ParentNPC>19</ParentNPC>
+<Desc>처음 보는 트롤이었다. 알 수 없는 언어를 내뱉었다. 트롤도 나에게 적대심을 가지고 있는 것이 눈에 보였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>72</ID>
+<NPCActionName>72</NPCActionName>
+<ParentNPC>19</ParentNPC>
+<Desc>생각보다 끈질긴 트롤이다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>73</ID>
+<NPCActionName>73</NPCActionName>
+<ParentNPC>19</ParentNPC>
+<Desc>힘겨운 상대였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>77</ID>
+<NPCActionName>78</NPCActionName>
+<ParentNPC>20</ParentNPC>
+<Desc>도주성공</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>10</ID>
+<NPCActionName>10</NPCActionName>
+<ParentNPC>3</ParentNPC>
+<Desc>날씨가 좋지 않았다. 그래서인지 오후임에도 불구하고 숲 속은 어두워 보였다. </Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>11</ID>
+<NPCActionName>11</NPCActionName>
+<ParentNPC>3</ParentNPC>
+<Desc>밤의 숲은 기괴했다. 좁아진 시야는 공포감을 생성했다. 밤의 숲 그곳은 위험하게 느껴졌다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>12</ID>
+<NPCActionName>12</NPCActionName>
+<ParentNPC>3</ParentNPC>
+<Desc>비가오는 밤. 숲 속은 조용했다. 아무런 소리도 들리지 않았다. 그리고 어떠한 것도 보이지 않았다.</Desc>
+</NPCActionTable>
+<NPCActionTable>
+<ID>13</ID>
+<NPCActionName>13</NPCActionName>
+<ParentNPC>3</ParentNPC>
+<Desc>저 멀리서 도시 경비대로 보이는 사람들이 보였다. </Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>1</ID>
 <NPCActionName>1</NPCActionName>
-<ParentNPC>2</ParentNPC>
-<Desc>도시에 도착했다. 마을 밖은 위험하고 피곤했다. 도시에 도착하니 마음이 편해졌다. 우선적으로 무엇을 해야할까?</Desc>
+<ParentNPC>1</ParentNPC>
+<Desc>정신을 차리고 보니, 처음 보는 낯선 곳이었다. 그리고 눈 앞에 번쩍거리는 옷을 입고는 날카로운 눈빛으로 나를 쳐다보는 사람이 있었다</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>2</ID>
 <NPCActionName>2</NPCActionName>
 <ParentNPC>2</ParentNPC>
-<Desc>도시 안에서 필요한 일은 다 한것 같다. 그렇다면 무엇을 하면 좋을까?</Desc>
+<Desc>도시에 도착했다. 마을 밖은 위험하고 피곤했다. 도시에 도착하니 마음이 편해졌다. 우선적으로 무엇을 해야 할까?</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>3</ID>
 <NPCActionName>3</NPCActionName>
-<ParentNPC>3</ParentNPC>
-<Desc>도시 근처에 있는 숲으로 왔다. 무성한 나무들 사이로 빛이 조금씩 들어왔다. 그렇게 위험해 보이지는 않는다. 무엇을 해야할까?</Desc>
+<ParentNPC>2</ParentNPC>
+<Desc>도시 안에서 필요한 일은 다한 것 같다. 그렇다면 무엇을 하면 좋을까?</Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>4</ID>
 <NPCActionName>4</NPCActionName>
-<ParentNPC>4</ParentNPC>
-<Desc>큰 나무로 된 현판이 걸려있다. 그곳에는 멋진 글씨체로 &apos;모험가 길드&apos;라고 적혀 있었다. 무엇을 할까?</Desc>
+<ParentNPC>3</ParentNPC>
+<Desc>처음으로 본 도시 근처의 숲이었다. 큰 나무가 빽빽하게 차 있었다. 이런 숲이라면 저 깊은 곳에서는 길을 잃기 쉬었다. </Desc>
 </NPCActionTable>
 <NPCActionTable>
 <ID>5</ID>
 <NPCActionName>5</NPCActionName>
-<ParentNPC>6</ParentNPC>
-<Desc>높이 솟은 성당의 지붕은 그 자체로 장대한 위엄이 느껴졌다. 성스러운 힘이 이곳에서 느껴진다. 무엇을 해야할까?</Desc>
+<ParentNPC>3</ParentNPC>
+<Desc>도시에 있는 숲은 언제나 푸르렀다. 하지만 도시에 안좋은 점이라면 숲 속, 깊은 곳에서 몬스터들이 나온다는 것이었다. </Desc>
 </NPCActionTable>
 </dataroot>

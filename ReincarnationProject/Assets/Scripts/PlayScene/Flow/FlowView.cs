@@ -43,8 +43,7 @@ public class FlowView : MonoBehaviour {
         int numOfChoice = _model.m_curChoiceList.Count;
 
         for(int i = 0; i < numOfChoice;i++)
-            m_choiceBtnList[i].Show(_model.m_curChoiceList[i].m_parentNPCActionName.ToString());
+            m_choiceBtnList[i].Show(_model.m_curChoiceList[i].m_desc);
             
     }
-
 }

@@ -14,16 +14,17 @@
 <od:index index-name="GivenID" index-key="GivenID " primary="no" unique="no" clustered="no" order="asc"/>
 <od:index index-name="PrimaryKey" index-key="ID " primary="yes" unique="yes" clustered="no" order="asc"/>
 <od:tableProperty name="PublishToWeb" type="2" value="1"/>
-<od:tableProperty name="GUID" type="9" value="UhqYt60h/06UpnUQ88vcQQ==
+<od:tableProperty name="GUID" type="9" value="riU6vHmTUEGwO1WTA4YIsA==
 "/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAABSGpi3rSH/TpSmdRDzy9xBAAAAAOu+xff17uRAAAAAAAAAAABOAFAA
-QwBOAGEAbQBlAFQAYQBiAGwAZQAAAAAAAABPCkA5uKNmT48bF8zgCs25BwAAAFIa
-mLetIf9OlKZ1EPPL3EFJAEQAAAAAAAAAHcwADRfS9Ee70XO+3PwD2QcAAABSGpi3
-rSH/TpSmdRDzy9xBTgBQAEMATgBhAG0AZQAAAAAAAABuWiH8P5VrRbKmhNMsxEuH
-BwAAAFIamLetIf9OlKZ1EPPL3EFHAGkAdgBlAG4ASQBEAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACuJTq8eZNQQbA7VZMDhgiwAAAAACmzGjgP7+RAAAAAAAAAAABOAFAA
+QwBOAGEAbQBlAFQAYQBiAGwAZQAAAAAAAABPCkA5uKNmT48bF8zgCs25BwAAAK4l
+Orx5k1BBsDtVkwOGCLBJAEQAAAAAAAAAHcwADRfS9Ee70XO+3PwD2QcAAACuJTq8
+eZNQQbA7VZMDhgiwTgBQAEMATgBhAG0AZQAAAAAAAABuWiH8P5VrRbKmhNMsxEuH
+BwAAAK4lOrx5k1BBsDtVkwOGCLBHAGkAdgBlAG4ASQBEAAAAAAAAAMqhgLYEZ1xN
+jrZuV7+DJacHAAAAriU6vHmTUEGwO1WTA4YIsCTBhbqswKnGWNXAyUrFTMcAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAADAAAAAUAAAAAAAAAAAAAAAAAAAAAAA==
 "/>
 <od:tableProperty name="DefaultView" type="2" value="2"/>
 <od:tableProperty name="DisplayViewsOnSharePointSite" type="2" value="1"/>
@@ -65,7 +66,7 @@ AAAAAAAAAAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 <od:fieldProperty name="GUID" type="9" value="HcwADRfS9Ee70XO+3PwD2Q==
 "/>
 <od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-<od:fieldProperty name="ColumnOrder" type="3" value="2"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="3"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Required" type="1" value="0"/>
 <od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -100,7 +101,7 @@ AAAAAAAAAAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 <xsd:annotation>
 <xsd:appinfo>
 <od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-<od:fieldProperty name="ColumnOrder" type="3" value="3"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="2"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Required" type="1" value="0"/>
 <od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
@@ -113,6 +114,32 @@ AAAAAAAAAAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 <od:fieldProperty name="ResultType" type="2" value="0"/>
 <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 <od:fieldProperty name="GUID" type="9" value="bloh/D+Va0WypoTTLMRLhw==
+"/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="255"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:element>
+<xsd:element name="설명사용하지않음" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="ColumnWidth" type="3" value="4200"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="4"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
+<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+<od:fieldProperty name="IMEMode" type="2" value="10"/>
+<od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
+<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+<od:fieldProperty name="GUID" type="9" value="yqGAtgRnXE2Otm5Xv4Mlpw==
 "/>
 </xsd:appinfo>
 </xsd:annotation>
