@@ -16,7 +16,7 @@
 "/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACIOFdCl4tzQYoO2p7ULWnaAAAAAGNmKfVS7+RAAAAAAAAAAABOAFAA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAACIOFdCl4tzQYoO2p7ULWnaAAAAAG2eXwNW7+RAAAAAAAAAAABOAFAA
 QwBBAGMAdABpAG8AbgBDAGgAbwBpAGMAZQBUAGEAYgBsAGUAAAAAAAAAKS830OPN
 PEGPf0kYR7e2agcAAACIOFdCl4tzQYoO2p7ULWnaSQBEAAAAAAAAAOlj1apy075I
 hcPVL/ecQBUAAAAAvOT1/Pfu5EAAAAAAAAAAAE4AUABDAEEAYwB0AGkAbwBuAEMA
@@ -31,8 +31,14 @@ AAC7EYYg5wxDS5+b+6l1kr3uSQBEAAAAAAAAAHLL6k0xK8BCrxipZ7qraAAHAAAA
 uxGGIOcMQ0ufm/updZK97k4AUABDAEEAYwB0AGkAbwBuAE4AYQBtAGUAAAAAAAAA
 vABqu23mtkGRxcx2V79FAAcAAACIOFdCl4tzQYoO2p7ULWnaUABhAHIAZQBuAHQA
 QQBjAHQAaQBvAG4ATgBhAG0AZQAAAAAAAAAJIUwcTIZHRLtEr0VsSiAABwAAAIg4
-V0KXi3NBig7antQtadpEAGUAcwBjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAA
-BQAAAAAAAAAAAAAAAAAAAAAA
+V0KXi3NBig7antQtadpEAGUAcwBjAAAAAAAAAK4lOrx5k1BBsDtVkwOGCLAAAAAA
+uH5dNxDv5EAAAAAAAAAAAE4AUABDAE4AYQBtAGUAVABhAGIAbABlAAAAAAAAAE8K
+QDm4o2ZPjxsXzOAKzbkHAAAAriU6vHmTUEGwO1WTA4YIsEkARAAAAAAAAAAdzAAN
+F9L0R7vRc77c/APZBwAAAK4lOrx5k1BBsDtVkwOGCLBOAFAAQwBOAGEAbQBlAAAA
+AAAAAGb4DBhrXcxBnO4wEDHrurgHAAAAiDhXQpeLc0GKDtqe1C1p2k4AZQB4AHQA
+TgBQAEMAAAAAAAAAqaUnm+twvUan2Dfh1/A54wcAAACIOFdCl4tzQYoO2p7ULWna
+TgBlAHgAdABOAFAAQwBBAGMAdABpAG8AbgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+DAAAAAUAAAAAAAAAAAAAAAAAAAAAAA==
 "/>
 <od:tableProperty name="DefaultView" type="2" value="2"/>
 <od:tableProperty name="DisplayViewsOnSharePointSite" type="2" value="1"/>
@@ -143,7 +149,7 @@ BQAAAAAAAAAAAAAAAAAAAAAA
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="CSFMHEyGR0S7RK9FbEogAA==
 "/>
-<od:fieldProperty name="ColumnWidth" type="3" value="7590"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="6495"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="4"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Required" type="1" value="0"/>
@@ -163,6 +169,66 @@ BQAAAAAAAAAAAAAAAAAAAAAA
 <xsd:maxLength value="255"/>
 </xsd:restriction>
 </xsd:simpleType>
+</xsd:element>
+<xsd:element name="NextNPC" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="ZvgMGGtdzEGc7jAQMeu6uA==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="5"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="DisplayControl" type="3" value="111"/>
+<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+<od:fieldProperty name="RowSource" type="12" value="SELECT [NPCNameTable].[ID], [NPCNameTable].[NPCName] FROM NPCNameTable; "/>
+<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+<od:fieldProperty name="ColumnCount" type="3" value="2"/>
+<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+<od:fieldProperty name="ColumnWidths" type="10" value="0;1440"/>
+<od:fieldProperty name="ListRows" type="3" value="16"/>
+<od:fieldProperty name="ListWidth" type="10" value="1440트윕"/>
+<od:fieldProperty name="LimitToList" type="1" value="1"/>
+<od:fieldProperty name="AllowMultipleValues" type="1" value="0"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AllowValueListEdits" type="1" value="1"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="NextNPCAction" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="qaUnm+twvUan2Dfh1/A54w==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="2385"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="6"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="DisplayControl" type="3" value="111"/>
+<od:fieldProperty name="RowSourceType" type="10" value="Table/Query"/>
+<od:fieldProperty name="RowSource" type="12" value="SELECT [NPCActionNameTable].[ID], [NPCActionNameTable].[NPCActionName] FROM NPCActionNameTable; "/>
+<od:fieldProperty name="BoundColumn" type="3" value="1"/>
+<od:fieldProperty name="ColumnCount" type="3" value="2"/>
+<od:fieldProperty name="ColumnHeads" type="1" value="0"/>
+<od:fieldProperty name="ColumnWidths" type="10" value="0;1440"/>
+<od:fieldProperty name="ListRows" type="3" value="16"/>
+<od:fieldProperty name="ListWidth" type="10" value="1440트윕"/>
+<od:fieldProperty name="LimitToList" type="1" value="1"/>
+<od:fieldProperty name="AllowMultipleValues" type="1" value="0"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AllowValueListEdits" type="1" value="1"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ShowOnlyRowSourceValues" type="1" value="0"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
 </xsd:element>
 </xsd:sequence>
 </xsd:complexType>

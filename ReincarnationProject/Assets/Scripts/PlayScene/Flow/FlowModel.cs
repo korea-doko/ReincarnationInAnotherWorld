@@ -37,7 +37,6 @@ public class FlowModel : MonoBehaviour
 
         m_nextNPC = NPCName.None;
         m_nextNPCAction = NPCActionName.None;
-
     }
     public void SetNPCAction(NPCAction _curNPCAction)
     {

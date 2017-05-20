@@ -16,40 +16,12 @@ public struct NPCActionChoiceWithParentID
     }
 }
 
-public struct NPCActionChoiceNameSt
-{
-    public int m_id;
-    public int m_givenID;               // 내가 임의로 집어넣은 값.
-    public NPCActionChoiceName m_name;
 
-    public NPCActionChoiceNameSt(Dictionary<string,string> _data)
-    {
-        m_id = int.Parse(_data["ID"]);
-        m_givenID = int.Parse(_data["GivenID"]);
-        m_name = (NPCActionChoiceName)m_givenID;             
-    }
-
-    public int GetGivenID(int _id)
-    {
-        if (m_id == _id)
-            return m_givenID;
-
-        return -1;
-    }
-    public int GetID(int _givenID)
-    {
-        if (m_givenID == _givenID)
-            return m_id;
-
-        return -1;
-    }
-}
 
 [System.Serializable]
 public class NPCActionChoiceFactory
 {
     public List<NPCActionChoiceWithParentID> m_choiceWithParentList;
-    public List<NPCActionChoiceNameSt> m_choiceStList;
     public List<NPCActionChoice> m_actionChoiceList;
 
     private List<Dictionary<string, string>> m_fullDic = new List<Dictionary<string, string>>();  // every item info from DB
@@ -58,17 +30,7 @@ public class NPCActionChoiceFactory
     {
         m_choiceWithParentList = new List<NPCActionChoiceWithParentID>();
         m_actionChoiceList = new List<NPCActionChoice>();
-        m_choiceStList = new List<NPCActionChoiceNameSt>();
-
-        ReadNameDataFromXML();
-
-        for (int i = 0; i < m_fullDic.Count; i++)
-            m_choiceStList.Add(new NPCActionChoiceNameSt(m_fullDic[i]));
-        // NameTable XML에서 가져와서 저장
-
-        m_fullDic.Clear();
-        // 재활용하기 위해서 비워주기
-        
+       
         ReadDataFromXml();
         //  데이터 읽어오기
 
@@ -127,42 +89,7 @@ public class NPCActionChoiceFactory
         m_fullDic = null;
     }
    
-    void ReadNameDataFromXML()
-    {
-        TextAsset textAsset = (TextAsset)Resources.Load("TextAssets/NPCActionChoiceNameTable");
-
-        XmlDocument xmlDoc = new XmlDocument();
-        xmlDoc.LoadXml(textAsset.text);
-        XmlNodeList itemList = xmlDoc.GetElementsByTagName("NPCActionChoiceNameTable");
-
-
-        foreach (XmlNode itemInfo in itemList)
-        {
-            XmlNodeList itemContent = itemInfo.ChildNodes;
-            Dictionary<string, string> partialDic = new Dictionary<string, string>(); // ItemName is TestItem;
-
-            foreach (XmlNode content in itemContent)
-            {
-
-                switch (content.Name)
-                {
-                    case "ID":
-                        partialDic.Add("ID", content.InnerText);
-                        break;
-                    case "GivenID":
-                        partialDic.Add("GivenID", content.InnerText);
-                        break;
-                    case "NPCActionChoiceName":
-                       // partialDic.Add("NPCActionChoiceName", content.InnerText);
-                        break;
-                    default:
-                        Debug.Log("NPCActionChoice Factory Error = " + content.Name);
-                        break;
-                }
-            }
-            m_fullDic.Add(partialDic);
-        }
-    }
+    
 
     void ReadDataFromXml()
     {
@@ -194,6 +121,12 @@ public class NPCActionChoiceFactory
                         break;
                     case "Desc":
                         partialDic.Add("Desc", content.InnerText);
+                        break;
+                    case "NextNPC":
+                        partialDic.Add("NextNPC", content.InnerText);
+                        break;
+                    case "NextNPCAction":
+                        partialDic.Add("NextNPCAction", content.InnerText);
                         break;
                     default:
                         Debug.Log("NPCActionChoice Factory Error = " + content.Name);

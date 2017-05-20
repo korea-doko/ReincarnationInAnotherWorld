@@ -1,939 +1,1251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceTable.xsd" generated="2017-05-19T15:26:55">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceTable.xsd" generated="2017-05-20T14:12:44">
 <NPCActionChoiceTable>
 <ID>1</ID>
 <NPCActionChoiceName>1</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
 <Desc>1. 당황스럽지만 아무렇지 않게 있는다.</Desc>
+<NextNPC>9</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>2</ID>
 <NPCActionChoiceName>2</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
 <Desc>2. 기억을 잊은 것처럼 행동한다</Desc>
+<NextNPC>9</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>3</ID>
 <NPCActionChoiceName>3</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
 <Desc>3. 자연스럽게 반대로 질문을 한다.</Desc>
+<NextNPC>9</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>4</ID>
 <NPCActionChoiceName>4</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>1.     힘들지만 바로 모험가 길드로 돌아간다.</Desc>
+<NextNPC>4</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>5</ID>
 <NPCActionChoiceName>5</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>2.     장비 점검이 우선이다. 대장간으로 먼저 가자.</Desc>
+<NextNPC>5</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>6</ID>
 <NPCActionChoiceName>6</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>3.     상처를 입은 것이 있나 확인하기 위해 수도원으로 가자.</Desc>
+<NextNPC>6</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>7</ID>
 <NPCActionChoiceName>7</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>4.     우선적인 음식 보급이 최우선이다. 식료품점으로 가자.</Desc>
+<NextNPC>7</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>8</ID>
 <NPCActionChoiceName>8</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>5.     고가의 마법도구를 먼저 확인하자. 마법도구점으로 간다.</Desc>
+<NextNPC>8</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>9</ID>
 <NPCActionChoiceName>9</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>6.     아직 도시 바깥에서 일을 다 보지 못했다. 다시 숲으로 가자.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>10</ID>
 <NPCActionChoiceName>10</NPCActionChoiceName>
 <ParentActionName>2</ParentActionName>
 <Desc>7.     경비대에 말을 건내자.</Desc>
+<NextNPC>9</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>11</ID>
 <NPCActionChoiceName>11</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
 <Desc>1.     모험가 길드로 간다.</Desc>
+<NextNPC>4</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>12</ID>
 <NPCActionChoiceName>12</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
 <Desc>2.     대장간으로 간다..</Desc>
+<NextNPC>5</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>13</ID>
 <NPCActionChoiceName>13</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
 <Desc>3.     수도원으로 간다..</Desc>
+<NextNPC>6</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>14</ID>
 <NPCActionChoiceName>14</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
 <Desc>4.     식료품점으로 간다..</Desc>
+<NextNPC>7</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>15</ID>
 <NPCActionChoiceName>15</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
 <Desc>5.     마법도구점으로 간다.</Desc>
+<NextNPC>8</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>16</ID>
 <NPCActionChoiceName>16</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
 <Desc>6.     숲으로 간다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>17</ID>
 <NPCActionChoiceName>17</NPCActionChoiceName>
 <ParentActionName>3</ParentActionName>
-<Desc>7. 경비대에 가보자.</Desc>
+<Desc>7.     경비대에 가보자.</Desc>
+<NextNPC>9</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>18</ID>
 <NPCActionChoiceName>18</NPCActionChoiceName>
 <ParentActionName>4</ParentActionName>
 <Desc>1. 처음으로 온 숲이기 때문에 주변을 먼저 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>19</ID>
 <NPCActionChoiceName>19</NPCActionChoiceName>
 <ParentActionName>4</ParentActionName>
 <Desc>2. 처음으로 온 숲이지만 숲 속 깊은 곳 까지 들어가보자.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>20</ID>
 <NPCActionChoiceName>20</NPCActionChoiceName>
 <ParentActionName>4</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>21</ID>
 <NPCActionChoiceName>21</NPCActionChoiceName>
 <ParentActionName>5</ParentActionName>
 <Desc>1. 숲 주변을 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>22</ID>
 <NPCActionChoiceName>22</NPCActionChoiceName>
 <ParentActionName>5</ParentActionName>
 <Desc>2. 숲 속으로 들어가보자.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>23</ID>
 <NPCActionChoiceName>23</NPCActionChoiceName>
 <ParentActionName>5</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>24</ID>
 <NPCActionChoiceName>24</NPCActionChoiceName>
 <ParentActionName>6</ParentActionName>
 <Desc>1. 안개 낀 숲은 위험하다. 주변만 탐색을 해보자.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>25</ID>
 <NPCActionChoiceName>25</NPCActionChoiceName>
 <ParentActionName>6</ParentActionName>
 <Desc>2. 안개가 껴도 어쩔 수 없다. 숲 속으로 들어가자.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>26</ID>
 <NPCActionChoiceName>26</NPCActionChoiceName>
 <ParentActionName>6</ParentActionName>
 <Desc>3. 안개 낀 아침, 도시로 돌아가 안개가 걷히길 기다리자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>27</ID>
 <NPCActionChoiceName>27</NPCActionChoiceName>
 <ParentActionName>7</ParentActionName>
 <Desc>1. 숲 주변을 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>28</ID>
 <NPCActionChoiceName>28</NPCActionChoiceName>
 <ParentActionName>7</ParentActionName>
 <Desc>2. 이런 날은 큰 위험은 없을 것이다.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>29</ID>
 <NPCActionChoiceName>29</NPCActionChoiceName>
 <ParentActionName>7</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>30</ID>
 <NPCActionChoiceName>30</NPCActionChoiceName>
 <ParentActionName>9</ParentActionName>
 <Desc>1. 숲 주변을 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>31</ID>
 <NPCActionChoiceName>31</NPCActionChoiceName>
 <ParentActionName>9</ParentActionName>
 <Desc>2. 이런 날은 큰 위험은 없을 것이다.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>32</ID>
 <NPCActionChoiceName>32</NPCActionChoiceName>
 <ParentActionName>9</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>33</ID>
 <NPCActionChoiceName>33</NPCActionChoiceName>
 <ParentActionName>10</ParentActionName>
 <Desc>1. 숲 주변을 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>34</ID>
 <NPCActionChoiceName>34</NPCActionChoiceName>
 <ParentActionName>10</ParentActionName>
 <Desc>2. 이런 날은 큰 위험은 없을 것이다.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>35</ID>
 <NPCActionChoiceName>35</NPCActionChoiceName>
 <ParentActionName>10</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>36</ID>
 <NPCActionChoiceName>36</NPCActionChoiceName>
 <ParentActionName>11</ParentActionName>
 <Desc>1. 숲 주변을 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>37</ID>
 <NPCActionChoiceName>37</NPCActionChoiceName>
 <ParentActionName>11</ParentActionName>
 <Desc>2. 이런 날은 큰 위험은 없을 것이다.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>38</ID>
 <NPCActionChoiceName>38</NPCActionChoiceName>
 <ParentActionName>11</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>39</ID>
 <NPCActionChoiceName>39</NPCActionChoiceName>
 <ParentActionName>12</ParentActionName>
 <Desc>1. 숲 주변을 탐색한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>40</ID>
 <NPCActionChoiceName>40</NPCActionChoiceName>
 <ParentActionName>12</ParentActionName>
 <Desc>2. 이런 날은 큰 위험은 없을 것이다.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>41</ID>
 <NPCActionChoiceName>41</NPCActionChoiceName>
 <ParentActionName>12</ParentActionName>
 <Desc>3. 아직 도시에서 볼 일이 남아있다. 도시로 들어가자.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>42</ID>
 <NPCActionChoiceName>42</NPCActionChoiceName>
 <ParentActionName>13</ParentActionName>
 <Desc>1. 도시 경비대를 보러가자.</Desc>
+<NextNPC>17</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>43</ID>
 <NPCActionChoiceName>43</NPCActionChoiceName>
 <ParentActionName>13</ParentActionName>
 <Desc>2. 굳이 만나고 싶지 않다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>44</ID>
 <NPCActionChoiceName>44</NPCActionChoiceName>
 <ParentActionName>14</ParentActionName>
 <Desc>1. 사냥꾼에게 가보자.</Desc>
+<NextNPC>16</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>45</ID>
 <NPCActionChoiceName>45</NPCActionChoiceName>
 <ParentActionName>14</ParentActionName>
 <Desc>2. 굳이 만나고 싶지 않다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>46</ID>
 <NPCActionChoiceName>46</NPCActionChoiceName>
 <ParentActionName>15</ParentActionName>
 <Desc>1.     앞에 보이는 접수원에게 다가간다.</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>47</ID>
 <NPCActionChoiceName>47</NPCActionChoiceName>
 <ParentActionName>15</ParentActionName>
 <Desc>2. 모험가 길드에서 볼 일은 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>48</ID>
 <NPCActionChoiceName>48</NPCActionChoiceName>
 <ParentActionName>16</ParentActionName>
 <Desc>1.     앞에 보이는 대장장이에게 다가간다.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>49</ID>
 <NPCActionChoiceName>49</NPCActionChoiceName>
 <ParentActionName>16</ParentActionName>
 <Desc>아직 볼 일이 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>50</ID>
 <NPCActionChoiceName>50</NPCActionChoiceName>
 <ParentActionName>17</ParentActionName>
 <Desc>1. 대장장이에게 볼 일이 있다.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>51</ID>
 <NPCActionChoiceName>51</NPCActionChoiceName>
 <ParentActionName>17</ParentActionName>
 <Desc>아직 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>52</ID>
 <NPCActionChoiceName>52</NPCActionChoiceName>
 <ParentActionName>18</ParentActionName>
 <Desc>1. 성당으로 들어간다.</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>53</ID>
 <NPCActionChoiceName>53</NPCActionChoiceName>
 <ParentActionName>18</ParentActionName>
 <Desc>아직은 볼 일이 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>54</ID>
 <NPCActionChoiceName>54</NPCActionChoiceName>
 <ParentActionName>19</ParentActionName>
 <Desc>1. 성당으로 들어간다. </Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>55</ID>
 <NPCActionChoiceName>55</NPCActionChoiceName>
 <ParentActionName>19</ParentActionName>
 <Desc>아직은 볼 일이 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>56</ID>
 <NPCActionChoiceName>56</NPCActionChoiceName>
 <ParentActionName>20</ParentActionName>
 <Desc>1. 주인으로 보이는 여자에게 다가간다.</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>57</ID>
 <NPCActionChoiceName>57</NPCActionChoiceName>
 <ParentActionName>20</ParentActionName>
 <Desc>아직은 볼 일 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>58</ID>
 <NPCActionChoiceName>58</NPCActionChoiceName>
 <ParentActionName>21</ParentActionName>
 <Desc>1.     주인으로 보이는 여자에게 다가간다.</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>59</ID>
 <NPCActionChoiceName>59</NPCActionChoiceName>
 <ParentActionName>21</ParentActionName>
 <Desc>아직은 볼 일이 없다</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>60</ID>
 <NPCActionChoiceName>60</NPCActionChoiceName>
 <ParentActionName>22</ParentActionName>
 <Desc>1.     앞에 보이는 마법사에게 다가간다.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>61</ID>
 <NPCActionChoiceName>61</NPCActionChoiceName>
 <ParentActionName>22</ParentActionName>
 <Desc>아직은 볼 일이 없다</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>62</ID>
 <NPCActionChoiceName>62</NPCActionChoiceName>
 <ParentActionName>23</ParentActionName>
 <Desc>1. 앞에 보이는 마법사에게 다가간다.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>63</ID>
 <NPCActionChoiceName>63</NPCActionChoiceName>
 <ParentActionName>23</ParentActionName>
 <Desc>아직은 볼 일이 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>64</ID>
 <NPCActionChoiceName>64</NPCActionChoiceName>
 <ParentActionName>24</ParentActionName>
 <Desc>대답함</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>65</ID>
 <NPCActionChoiceName>65</NPCActionChoiceName>
 <ParentActionName>25</ParentActionName>
 <Desc>대답함</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>66</ID>
 <NPCActionChoiceName>66</NPCActionChoiceName>
 <ParentActionName>26</ParentActionName>
 <Desc>1. 안녕하세요. 처음뵙겠습니다.</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>67</ID>
 <NPCActionChoiceName>67</NPCActionChoiceName>
 <ParentActionName>26</ParentActionName>
 <Desc>2. 잘 부탁해</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>68</ID>
 <NPCActionChoiceName>68</NPCActionChoiceName>
 <ParentActionName>27</ParentActionName>
 <Desc>1. 오늘은 .. 이 필요해서</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>69</ID>
 <NPCActionChoiceName>69</NPCActionChoiceName>
 <ParentActionName>27</ParentActionName>
 <Desc>2. 한번 그냥 들려봤어!</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>70</ID>
 <NPCActionChoiceName>70</NPCActionChoiceName>
 <ParentActionName>28</ParentActionName>
 <Desc>1. 임무가 있을까?</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>71</ID>
 <NPCActionChoiceName>71</NPCActionChoiceName>
 <ParentActionName>28</ParentActionName>
 <Desc>2. 아니 볼 일 없어.</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>72</ID>
 <NPCActionChoiceName>72</NPCActionChoiceName>
 <ParentActionName>29</ParentActionName>
 <Desc>1. 임무가 있나?</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>73</ID>
 <NPCActionChoiceName>73</NPCActionChoiceName>
 <ParentActionName>29</ParentActionName>
 <Desc>2. 아니야! </Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>74</ID>
 <NPCActionChoiceName>74</NPCActionChoiceName>
 <ParentActionName>30</ParentActionName>
 <Desc>1.한다..</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>32</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>75</ID>
 <NPCActionChoiceName>75</NPCActionChoiceName>
 <ParentActionName>30</ParentActionName>
 <Desc>안한다</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>76</ID>
 <NPCActionChoiceName>76</NPCActionChoiceName>
 <ParentActionName>31</ParentActionName>
 <Desc>1한다.</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>32</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>77</ID>
 <NPCActionChoiceName>77</NPCActionChoiceName>
 <ParentActionName>31</ParentActionName>
 <Desc>안한다.</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>78</ID>
 <NPCActionChoiceName>78</NPCActionChoiceName>
 <ParentActionName>32</ParentActionName>
 <Desc>1. 알겠어.</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>79</ID>
 <NPCActionChoiceName>79</NPCActionChoiceName>
 <ParentActionName>32</ParentActionName>
 <Desc>2. …</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>80</ID>
 <NPCActionChoiceName>80</NPCActionChoiceName>
 <ParentActionName>33</ParentActionName>
 <Desc>보상확인</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>81</ID>
 <NPCActionChoiceName>81</NPCActionChoiceName>
 <ParentActionName>34</ParentActionName>
 <Desc>확인</Desc>
+<NextNPC>10</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>82</ID>
 <NPCActionChoiceName>82</NPCActionChoiceName>
 <ParentActionName>35</ParentActionName>
 <Desc>1. 확인 멘트</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>83</ID>
 <NPCActionChoiceName>83</NPCActionChoiceName>
 <ParentActionName>35</ParentActionName>
 <Desc>2. 볼 일 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>84</ID>
 <NPCActionChoiceName>84</NPCActionChoiceName>
 <ParentActionName>36</ParentActionName>
 <Desc>1. 먹을 것을 사가고 싶은데</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>38</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>85</ID>
 <NPCActionChoiceName>85</NPCActionChoiceName>
 <ParentActionName>36</ParentActionName>
 <Desc>2. 볼 일 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>86</ID>
 <NPCActionChoiceName>86</NPCActionChoiceName>
 <ParentActionName>37</ParentActionName>
 <Desc>1. 먹을 것은 사가고 싶다.</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>38</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>87</ID>
 <NPCActionChoiceName>87</NPCActionChoiceName>
 <ParentActionName>37</ParentActionName>
 <Desc>2. 볼 일 없다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>88</ID>
 <NPCActionChoiceName>88</NPCActionChoiceName>
 <ParentActionName>38</ParentActionName>
 <Desc>1. 산다.</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>89</ID>
 <NPCActionChoiceName>89</NPCActionChoiceName>
 <ParentActionName>38</ParentActionName>
 <Desc>2. 안산다.</Desc>
+<NextNPC>11</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>90</ID>
 <NPCActionChoiceName>90</NPCActionChoiceName>
 <ParentActionName>39</ParentActionName>
 <Desc>1. 잘 부탁해.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>91</ID>
 <NPCActionChoiceName>91</NPCActionChoiceName>
 <ParentActionName>39</ParentActionName>
 <Desc>2. …</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>92</ID>
 <NPCActionChoiceName>92</NPCActionChoiceName>
 <ParentActionName>40</ParentActionName>
 <Desc>1. 물건을 좀 사고 싶어.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>93</ID>
 <NPCActionChoiceName>93</NPCActionChoiceName>
 <ParentActionName>40</ParentActionName>
 <Desc>2. 아니, 별 관심이 없어.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>94</ID>
 <NPCActionChoiceName>94</NPCActionChoiceName>
 <ParentActionName>41</ParentActionName>
 <Desc>1. 한번 보고 싶어. </Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>95</ID>
 <NPCActionChoiceName>95</NPCActionChoiceName>
 <ParentActionName>41</ParentActionName>
 <Desc>2. 아니 관심이 없어.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>96</ID>
 <NPCActionChoiceName>96</NPCActionChoiceName>
 <ParentActionName>42</ParentActionName>
 <Desc>1. 사지.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>97</ID>
 <NPCActionChoiceName>97</NPCActionChoiceName>
 <ParentActionName>42</ParentActionName>
 <Desc>2. 아니 관심이 없어.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>98</ID>
 <NPCActionChoiceName>98</NPCActionChoiceName>
 <ParentActionName>43</ParentActionName>
 <Desc>1. 사지.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>99</ID>
 <NPCActionChoiceName>99</NPCActionChoiceName>
 <ParentActionName>43</ParentActionName>
 <Desc>2. 아니 관심이 없어.</Desc>
+<NextNPC>12</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>100</ID>
 <NPCActionChoiceName>100</NPCActionChoiceName>
 <ParentActionName>44</ParentActionName>
 <Desc>01. 처음보는 인사</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>101</ID>
 <NPCActionChoiceName>101</NPCActionChoiceName>
 <ParentActionName>45</ParentActionName>
 <Desc>01. 물건을 사고 싶어.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>46</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>102</ID>
 <NPCActionChoiceName>102</NPCActionChoiceName>
 <ParentActionName>45</ParentActionName>
 <Desc>. 관심이 없어.</Desc>
+<NextNPC>8</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>103</ID>
 <NPCActionChoiceName>103</NPCActionChoiceName>
 <ParentActionName>46</ParentActionName>
 <Desc>01. 산다.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>104</ID>
 <NPCActionChoiceName>104</NPCActionChoiceName>
 <ParentActionName>46</ParentActionName>
 <Desc>02. 아니 관심이 없어.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>105</ID>
 <NPCActionChoiceName>105</NPCActionChoiceName>
 <ParentActionName>47</ParentActionName>
 <Desc>01. 산다.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>106</ID>
 <NPCActionChoiceName>106</NPCActionChoiceName>
 <ParentActionName>47</ParentActionName>
 <Desc>02. 아니 관심이 없어.</Desc>
+<NextNPC>13</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>107</ID>
 <NPCActionChoiceName>107</NPCActionChoiceName>
 <ParentActionName>48</ParentActionName>
 <Desc>1. 잘 부탁하지..</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>108</ID>
 <NPCActionChoiceName>108</NPCActionChoiceName>
 <ParentActionName>48</ParentActionName>
 <Desc>2. …</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>109</ID>
 <NPCActionChoiceName>109</NPCActionChoiceName>
 <ParentActionName>49</ParentActionName>
 <Desc>1. 상처를 치료했으면 해.</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>110</ID>
 <NPCActionChoiceName>110</NPCActionChoiceName>
 <ParentActionName>49</ParentActionName>
 <Desc>2. 물건을 좀 사고 싶은데…</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>51</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>111</ID>
 <NPCActionChoiceName>111</NPCActionChoiceName>
 <ParentActionName>49</ParentActionName>
 <Desc>3. 아무것도 아니야.</Desc>
+<NextNPC>6</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>112</ID>
 <NPCActionChoiceName>112</NPCActionChoiceName>
 <ParentActionName>50</ParentActionName>
 <Desc>01. 고마워.</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>113</ID>
 <NPCActionChoiceName>113</NPCActionChoiceName>
 <ParentActionName>51</ParentActionName>
 <Desc>01. 산다.</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>114</ID>
 <NPCActionChoiceName>114</NPCActionChoiceName>
 <ParentActionName>51</ParentActionName>
 <Desc>002.안산다</Desc>
+<NextNPC>14</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>115</ID>
 <NPCActionChoiceName>115</NPCActionChoiceName>
 <ParentActionName>52</ParentActionName>
 <Desc>. 뭐지? 주머니를 확인한다.</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>116</ID>
 <NPCActionChoiceName>116</NPCActionChoiceName>
 <ParentActionName>53</ParentActionName>
 <Desc>1. 너가 이 구역에서 소매치기를 하는 놈이지?</Desc>
+<NextNPC>2</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>117</ID>
 <NPCActionChoiceName>117</NPCActionChoiceName>
 <ParentActionName>54</ParentActionName>
 <Desc>01. 인사말</Desc>
+<NextNPC>16</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>118</ID>
 <NPCActionChoiceName>118</NPCActionChoiceName>
 <ParentActionName>55</ParentActionName>
 <Desc>01. 헤어 질 때 인사말</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>119</ID>
 <NPCActionChoiceName>119</NPCActionChoiceName>
 <ParentActionName>56</ParentActionName>
 <Desc>001. 인사말</Desc>
+<NextNPC>17</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>120</ID>
 <NPCActionChoiceName>120</NPCActionChoiceName>
 <ParentActionName>57</ParentActionName>
 <Desc>01. 헤어 질 때 인사말</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>121</ID>
 <NPCActionChoiceName>121</NPCActionChoiceName>
 <ParentActionName>58</ParentActionName>
 <Desc>숲 밖으로 나가는 것이 좋을 것 같다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>122</ID>
 <NPCActionChoiceName>122</NPCActionChoiceName>
 <ParentActionName>58</ParentActionName>
 <Desc>이곳을 조심스럽게 탐험하자.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>123</ID>
 <NPCActionChoiceName>123</NPCActionChoiceName>
 <ParentActionName>59</ParentActionName>
 <Desc>숲 밖으로 나가는 것이 좋을 것 같다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>124</ID>
 <NPCActionChoiceName>124</NPCActionChoiceName>
 <ParentActionName>59</ParentActionName>
 <Desc>이곳을 조심스럽게 탐험하자.</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>125</ID>
 <NPCActionChoiceName>125</NPCActionChoiceName>
 <ParentActionName>60</ParentActionName>
 <Desc>계속 탐험하기</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>126</ID>
 <NPCActionChoiceName>126</NPCActionChoiceName>
 <ParentActionName>60</ParentActionName>
 <Desc>이제 그만 나가야한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>127</ID>
 <NPCActionChoiceName>127</NPCActionChoiceName>
 <ParentActionName>61</ParentActionName>
 <Desc>계속 탐험하기</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>128</ID>
 <NPCActionChoiceName>128</NPCActionChoiceName>
 <ParentActionName>61</ParentActionName>
 <Desc>이제 그만 나가야한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>129</ID>
 <NPCActionChoiceName>129</NPCActionChoiceName>
 <ParentActionName>62</ParentActionName>
 <Desc>계속 탐험하기</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>130</ID>
 <NPCActionChoiceName>130</NPCActionChoiceName>
 <ParentActionName>62</ParentActionName>
 <Desc>이제 그만 나가야 한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>131</ID>
 <NPCActionChoiceName>131</NPCActionChoiceName>
 <ParentActionName>63</ParentActionName>
 <Desc>계속 탐험하기</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>132</ID>
 <NPCActionChoiceName>132</NPCActionChoiceName>
 <ParentActionName>63</ParentActionName>
 <Desc>이제 그만 나가야한다.</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>133</ID>
 <NPCActionChoiceName>133</NPCActionChoiceName>
 <ParentActionName>64</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>134</ID>
 <NPCActionChoiceName>134</NPCActionChoiceName>
 <ParentActionName>64</ParentActionName>
 <Desc>싸움</Desc>
+<NextNPC>18</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>135</ID>
 <NPCActionChoiceName>135</NPCActionChoiceName>
 <ParentActionName>66</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>136</ID>
 <NPCActionChoiceName>136</NPCActionChoiceName>
 <ParentActionName>66</ParentActionName>
 <Desc>싸움</Desc>
+<NextNPC>19</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>137</ID>
 <NPCActionChoiceName>137</NPCActionChoiceName>
 <ParentActionName>67</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>138</ID>
 <NPCActionChoiceName>138</NPCActionChoiceName>
 <ParentActionName>67</ParentActionName>
 <Desc>싸움</Desc>
+<NextNPC>19</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>139</ID>
 <NPCActionChoiceName>139</NPCActionChoiceName>
 <ParentActionName>78</ParentActionName>
 <Desc>탐험</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>140</ID>
 <NPCActionChoiceName>140</NPCActionChoiceName>
 <ParentActionName>78</ParentActionName>
 <Desc>나가기</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>141</ID>
 <NPCActionChoiceName>141</NPCActionChoiceName>
 <ParentActionName>68</ParentActionName>
 <Desc>공격1</Desc>
+<NextNPC>18</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>142</ID>
 <NPCActionChoiceName>142</NPCActionChoiceName>
 <ParentActionName>68</ParentActionName>
 <Desc>공격2</Desc>
+<NextNPC>18</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>143</ID>
 <NPCActionChoiceName>143</NPCActionChoiceName>
 <ParentActionName>68</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>144</ID>
 <NPCActionChoiceName>144</NPCActionChoiceName>
 <ParentActionName>69</ParentActionName>
 <Desc>공격1</Desc>
+<NextNPC>18</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>145</ID>
 <NPCActionChoiceName>145</NPCActionChoiceName>
 <ParentActionName>69</ParentActionName>
 <Desc>공격2</Desc>
+<NextNPC>18</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>146</ID>
 <NPCActionChoiceName>146</NPCActionChoiceName>
 <ParentActionName>69</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>147</ID>
 <NPCActionChoiceName>147</NPCActionChoiceName>
 <ParentActionName>70</ParentActionName>
 <Desc>계속 탐험하기</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>148</ID>
 <NPCActionChoiceName>148</NPCActionChoiceName>
 <ParentActionName>70</ParentActionName>
 <Desc>나가기</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>149</ID>
 <NPCActionChoiceName>149</NPCActionChoiceName>
 <ParentActionName>71</ParentActionName>
 <Desc>공격1</Desc>
+<NextNPC>19</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>150</ID>
 <NPCActionChoiceName>150</NPCActionChoiceName>
 <ParentActionName>71</ParentActionName>
 <Desc>공격2</Desc>
+<NextNPC>19</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>151</ID>
 <NPCActionChoiceName>151</NPCActionChoiceName>
 <ParentActionName>71</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>152</ID>
 <NPCActionChoiceName>152</NPCActionChoiceName>
 <ParentActionName>72</ParentActionName>
 <Desc>공격1</Desc>
+<NextNPC>19</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>153</ID>
 <NPCActionChoiceName>153</NPCActionChoiceName>
 <ParentActionName>72</ParentActionName>
 <Desc>공격2</Desc>
+<NextNPC>19</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>154</ID>
 <NPCActionChoiceName>154</NPCActionChoiceName>
 <ParentActionName>72</ParentActionName>
 <Desc>도주</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>155</ID>
 <NPCActionChoiceName>155</NPCActionChoiceName>
 <ParentActionName>73</ParentActionName>
 <Desc>계속 탐험하기</Desc>
+<NextNPC>20</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>156</ID>
 <NPCActionChoiceName>156</NPCActionChoiceName>
 <ParentActionName>73</ParentActionName>
 <Desc>나가기</Desc>
+<NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 </dataroot>

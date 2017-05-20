@@ -173,6 +173,10 @@ public class NPCActionChoice
     public NPCActionChoiceName m_npcActionChoiceName;
     public NPCActionName m_parentNPCActionName;
 
+    public NPCName m_nextNPCName;
+    public NPCActionName m_nextNPCAction;
+
+
     public NPCActionChoice()
     {
         m_id = -1;
