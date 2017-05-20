@@ -38,6 +38,7 @@ public interface INPC
 public class NPC : INPC
 {
     public List<NPCAction> m_actionList;
+
     public NPCName m_npcName;
     public string m_desc;
     
@@ -49,6 +50,9 @@ public class NPC : INPC
     }
     public void Init(Dictionary<string,string> _data)
     {
+        int id = int.Parse(_data["NPCName"]);
+        m_npcName = (NPCName)NPCManager.GetInst.m_model.GetNPCGivenID(id);
+
         m_desc = _data["Desc"];
     }
     public void AddNPCAction(NPCAction _ac)

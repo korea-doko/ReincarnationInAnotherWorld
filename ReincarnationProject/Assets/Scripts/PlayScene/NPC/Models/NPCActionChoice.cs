@@ -166,12 +166,11 @@ public enum NPCActionChoiceName
 [System.Serializable]
 public class NPCActionChoice
 {
-    public int m_id;
-    public string m_desc;
-    
-    // 나중에 따로 초기화
+
     public NPCActionChoiceName m_npcActionChoiceName;
     public NPCActionName m_parentNPCActionName;
+
+    public string m_desc;
 
     public NPCName m_nextNPCName;
     public NPCActionName m_nextNPCAction;
@@ -179,16 +178,28 @@ public class NPCActionChoice
 
     public NPCActionChoice()
     {
-        m_id = -1;
         m_desc = "None";
         m_npcActionChoiceName = NPCActionChoiceName.None;
         m_parentNPCActionName = NPCActionName.None;
+        m_nextNPCName = NPCName.None;
+        m_nextNPCAction = NPCActionName.None;
     }
     
     public void Init(Dictionary<string,string> _data)
     {
-        m_id = int.Parse(_data["ID"]);
+        int id = int.Parse(_data["NPCActionChoiceName"]);
+        m_npcActionChoiceName = (NPCActionChoiceName)NPCManager.GetInst.m_model.GetChoiceGivenID(id);
+
+        int parentId = int.Parse(_data["ParentActionName"]);
+        m_parentNPCActionName = (NPCActionName)NPCManager.GetInst.m_model.GetActionGivenID(parentId);
+
         m_desc = _data["Desc"];
+
+        int nextNPCid = int.Parse(_data["NextNPC"]);
+        m_nextNPCName = (NPCName)NPCManager.GetInst.m_model.GetNPCGivenID(nextNPCid);
+
+        int nextActionid = int.Parse(_data["NextNPCAction"]);
+        m_nextNPCAction = (NPCActionName)NPCManager.GetInst.m_model.GetActionGivenID(nextActionid);
     }
 }
 public class NPCActionChoice0 : NPCActionChoice

@@ -93,17 +93,15 @@ public interface INPCAction
 public class NPCAction : INPCAction {
 
     public List<NPCActionChoice> m_choiceList;
-
-    public int m_id;
+    
     public NPCActionName m_npcActionName;
+    public NPCName m_parentNPCName;     
     public string m_desc;
-    public NPCName m_parentNPCName;     // 나중에 NPC 이름 확인가능 할 때 따로 초기화 해준다.    
-
+    
 
     public NPCAction()
     {
         m_choiceList = new List<NPCActionChoice>();
-        m_id = -1;
         m_npcActionName = NPCActionName.None;
         m_desc = "none";
         m_parentNPCName = NPCName.None;
@@ -112,7 +110,12 @@ public class NPCAction : INPCAction {
     // 스크립트 만들 때마다 생성자 다 써주기 싫어서.. 
     public void Init(Dictionary<string,string> _data)
     {
-        m_id = int.Parse(_data["ID"]);
+        int id = int.Parse(_data["NPCActionName"]);
+        m_npcActionName = (NPCActionName)NPCManager.GetInst.m_model.GetNPCGivenID(id);
+
+        int parentid = int.Parse(_data["ParentNPC"]);
+        m_parentNPCName = (NPCName)NPCManager.GetInst.m_model.GetNPCGivenID(parentid);
+
         m_desc = _data["Desc"];
     }
 
