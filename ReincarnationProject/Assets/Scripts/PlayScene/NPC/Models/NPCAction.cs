@@ -102,6 +102,7 @@ public class NPCAction : INPCAction {
     public NPCAction()
     {
         m_choiceList = new List<NPCActionChoice>();
+
         m_npcActionName = NPCActionName.None;
         m_desc = "none";
         m_parentNPCName = NPCName.None;
@@ -111,7 +112,7 @@ public class NPCAction : INPCAction {
     public void Init(Dictionary<string,string> _data)
     {
         int id = int.Parse(_data["NPCActionName"]);
-        m_npcActionName = (NPCActionName)NPCManager.GetInst.m_model.GetNPCGivenID(id);
+        m_npcActionName = (NPCActionName)NPCManager.GetInst.m_model.GetActionGivenID(id);
 
         int parentid = int.Parse(_data["ParentNPC"]);
         m_parentNPCName = (NPCName)NPCManager.GetInst.m_model.GetNPCGivenID(parentid);

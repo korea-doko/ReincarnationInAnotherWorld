@@ -89,6 +89,7 @@ public class NPCActionFactory
                 int id = int.Parse(data["NPCActionName"]);
                 int givenID = NPCManager.GetInst.m_model.GetActionGivenID(id);
 
+                //Debug.Log(id.ToString() + " / " + givenID.ToString());
                 if (i != givenID)
                     continue;
 

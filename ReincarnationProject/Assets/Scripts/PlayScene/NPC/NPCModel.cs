@@ -294,7 +294,7 @@ public class NPCModel : MonoBehaviour
         }
 
 
-        Debug.Log("NPC Name Table Error");
+        Debug.Log("NPC Name Table Error, inputID =" +_id.ToString());
         return -1;
     }
     public int GetActionGivenID(int _id)
@@ -305,7 +305,7 @@ public class NPCModel : MonoBehaviour
                 return m_actionStList[i].GetGivenID(_id);
         }
 
-        Debug.Log("NPC Action Name Table Error");
+        Debug.Log("NPC Action Name Table Error, InputID = " + _id.ToString());
         return -1;
     }
     public int GetChoiceGivenID(int _id)
@@ -316,7 +316,7 @@ public class NPCModel : MonoBehaviour
                 return m_choiceStList[i].GetGivenID(_id);
         }
         
-        Debug.Log("Choice Name Table Error");
+        Debug.Log("Choice Name Table Error, InputID = " + _id.ToString());
         return -1;
     }
 }
