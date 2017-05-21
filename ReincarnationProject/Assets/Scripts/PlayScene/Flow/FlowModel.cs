@@ -9,9 +9,11 @@ public class FlowModel : MonoBehaviour
     public NPC m_curNPC;
     public NPCAction m_curAction;
     public List<NPCActionChoice> m_curChoiceList;
-    public FlowState m_curState;
 
-    public int m_choiceID;
+    public NPCActionChoice m_curChoice;
+
+    public FlowState m_curState;
+    
 
     public NPCName m_nextNPC;
     public NPCActionName m_nextNPCAction;
@@ -25,7 +27,8 @@ public class FlowModel : MonoBehaviour
         m_curChoiceList = null;
         m_curState = FlowState.GetNPC;
 
-        m_choiceID = -1;
+        m_curChoice = null;
+        
 
         m_nextNPC = NPCName.Player;
         m_nextNPCAction = NPCActionName.PlayerIntro1;
@@ -41,10 +44,22 @@ public class FlowModel : MonoBehaviour
     public void SetNPCAction(NPCAction _curNPCAction)
     {
         m_curAction = _curNPCAction;
+
+
     }
     public void SetChoiceList(List<NPCActionChoice> _choiceList)
     {
-        m_curChoiceList = _choiceList; 
+        m_curChoiceList = _choiceList;
+
+
+    }
+    public void SetCurChoice(int _curChoiceIndex)
+    {
+        m_curChoice = m_curChoiceList[_curChoiceIndex];
+
+        m_nextNPC = m_curChoice.m_nextNPCName;
+        m_nextNPCAction = m_curChoice.m_nextNPCAction;
+
     }
 
 }

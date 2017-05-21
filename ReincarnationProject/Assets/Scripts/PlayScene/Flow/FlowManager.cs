@@ -40,8 +40,6 @@ public class FlowManager : MonoBehaviour,IManager
 
     public void AwakeMgr()
     {
-
-
         m_model = Utils.MakeObjectWithComponent<FlowModel>("FlowModel", this.gameObject);
         m_model.Init(this);
 
@@ -87,7 +85,7 @@ public class FlowManager : MonoBehaviour,IManager
 
     public void TestBtnClicked(int _id)
     {
-        m_model.m_choiceID = _id;
+        m_model.SetCurChoice(_id);
         ChangeStateTo(FlowState.DoChoice);
     }
 
@@ -130,7 +128,6 @@ public class FlowManager : MonoBehaviour,IManager
         m_model.SetChoiceList(choiceList);
         m_view.ChangeTestChoice(m_model);
 
-
         ChangeStateTo(FlowState.AwaitPlayer);
     }
     void AwaitPlayer()
@@ -146,6 +143,7 @@ public class FlowManager : MonoBehaviour,IManager
     }
     void NotifyOhters()
     {
+        QuestManager.GetInst.GetQuestUsingParentNPC(m_model.m_curNPC.m_npcName);
 
         ChangeStateTo(FlowState.GetNPC);
     }

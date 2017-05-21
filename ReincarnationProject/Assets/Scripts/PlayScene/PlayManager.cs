@@ -8,7 +8,9 @@ public enum PlaySceneManagerName
     NPC,
     Input,
     Flow,
-    Envi
+    Envi,
+    Quest,
+    Player
 }
 
 public class PlayManager : MonoBehaviour

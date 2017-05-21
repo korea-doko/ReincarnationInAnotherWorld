@@ -88,8 +88,7 @@ public class NPCActionFactory
                 Dictionary<string, string> data = m_fullDic[k];
                 int id = int.Parse(data["NPCActionName"]);
                 int givenID = NPCManager.GetInst.m_model.GetActionGivenID(id);
-
-                //Debug.Log(id.ToString() + " / " + givenID.ToString());
+                
                 if (i != givenID)
                     continue;
 
