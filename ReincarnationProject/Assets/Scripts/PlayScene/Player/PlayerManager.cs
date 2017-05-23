@@ -40,7 +40,10 @@ public class PlayerManager : MonoBehaviour,IManager {
     {
         m_model.AddQuest(_quest);
     }
-    
+    public void AddPassive(Passive _passive)
+    {
+        m_model.AddPassive(_passive);
+    }
     public List<Quest> GetPlayerQuestList()
     {
         return m_model.m_questList;
@@ -61,11 +64,9 @@ public class PlayerManager : MonoBehaviour,IManager {
         {
             Quest q = m_model.m_questList[i];
 
-            Debug.Log(q.m_questName.ToString());
-
-            if (q.CheckComplete())
-                m_model.m_questList.RemoveAt(i);
-            
+            q.CheckComplete();
+            //if (q.CheckComplete())
+            //    m_model.m_questList.RemoveAt(i);            
         }
     }
 }

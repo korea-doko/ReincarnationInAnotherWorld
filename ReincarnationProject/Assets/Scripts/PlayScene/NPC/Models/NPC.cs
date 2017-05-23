@@ -117,7 +117,6 @@ public class NPC : INPC
     {
         
     }
-
     int GetIndexUsingActionName(NPCActionName _name)
     {
         for (int i = 0; i < m_convertList.Count; i++)

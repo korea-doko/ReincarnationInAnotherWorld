@@ -4,6 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+/*
+ *  while(true)
+ *  {
+ *      플레이어가 인풋을 하게되면, 그 인풋에 따라서 메시지 핸들러한테 넘김
+ *      
+ *  }
+ */
+
 public enum FlowState
 {
     GetNPC,
@@ -153,6 +161,7 @@ public class FlowManager : MonoBehaviour,IManager
     {
         QuestManager.GetInst.Notified();
         PlayerManager.GetInst.Notified();
+        PassiveManager.GetInst.Notified();
         
 
         ChangeStateTo(FlowState.GetNPC);

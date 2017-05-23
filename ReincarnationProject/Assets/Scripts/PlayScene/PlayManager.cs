@@ -10,7 +10,8 @@ public enum PlaySceneManagerName
     Flow,
     Envi,
     Quest,
-    Player
+    Player,
+    Passive
 }
 
 public class PlayManager : MonoBehaviour
@@ -58,5 +59,5 @@ public class PlayManager : MonoBehaviour
             if (m_mgrAry[i] != null)
                 m_mgrAry[i].UpdateMgr();
         }
-    }
+    }    
 }

@@ -46,17 +46,25 @@ public class QuestManager : MonoBehaviour, IManager
     /// </summary>
     /// <param name="_name"></param>
     void AddQuestToPlayer(NPCName _name)
-    {        
+    {
+        List<Quest> playerQuestList = PlayerManager.GetInst.GetPlayerQuestList();
+
         for(int i = 0; i < m_model.m_questList.Count;i++)
         {
             Quest que = m_model.m_questList[i];
+
+            if (que.m_isAccepted)
+                continue;
+
+            if (que.m_isClear)
+                continue;
 
             if (que.m_parentNPC != _name)
                 continue;
             
             if (!que.CheckAccept())
                 continue;
-
+            
             
             PlayerManager.GetInst.AddQuest(que);
         }        
