@@ -124,7 +124,10 @@ public class NPCModel : MonoBehaviour
 
     public NPC GetNPC(NPCName _name)
     {
-        return m_npcList[(int)_name];
+        NPC npc = m_npcList[(int)_name];
+        npc.m_numOfEncount++;
+
+        return npc;
     }
 
 
@@ -277,7 +280,7 @@ public class NPCModel : MonoBehaviour
                         partialDic.Add("NPCName", content.InnerText);
                         break;
                     default:
-                        Debug.Log("NPCActionFactory Error = " + content.Name);
+                        //Debug.Log("NPCActionFactory Error = " + content.Name);
                         break;
                 }
             }

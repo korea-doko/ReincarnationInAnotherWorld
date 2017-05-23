@@ -18,7 +18,8 @@ public class QuestModel : MonoBehaviour {
         {
             string name = "Quest" + i.ToString();
             object obj = Activator.CreateInstance(Type.GetType(name));
-            Quest quest = (Quest)obj;                       
+            Quest quest = (Quest)obj;
+            quest.Init(i);
             m_questList.Add(quest);
         }
     }

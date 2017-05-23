@@ -15,12 +15,11 @@ public enum QuestName
 
 public interface IQuest
 {
+    
     bool CheckAccept();
     // 퀘스트 받는거 확인
 
-    void QuestUpdate();
-    // 퀘스트 업데이트, 완료가 되는 중인지 확인
-
+    
     bool CheckComplete();
     // 퀘스트 깼나 확인
 }
@@ -28,23 +27,24 @@ public interface IQuest
 [System.Serializable]
 public class Quest : IQuest
 {
+    public QuestName m_questName;
     public NPCName m_parentNPC;
+    public bool m_isClear;
 
+    public void Init(int _id)
+    {
+        m_questName = (QuestName)_id;
+        m_isClear = false;
+    }
     
     public virtual bool CheckAccept()
     {
         return false;
     }
-
     public virtual bool CheckComplete()
     {
         return false;
-    }
-
-    public virtual void QuestUpdate()
-    {
-
-    }
+    } 
 }
 
 public class Quest0 : Quest
@@ -56,10 +56,6 @@ public class Quest0 : Quest
     public override bool CheckAccept()
     {
         return false;
-    }
-    public override void QuestUpdate()
-    {
-        
     }
     public override bool CheckComplete()
     {
@@ -80,11 +76,6 @@ public class Quest1 : Quest
 
         return false;
     }
-    public override void QuestUpdate()
-    {
-
-        Debug.Log("1");
-    }
     public override bool CheckComplete()
     {
         return base.CheckComplete();
@@ -98,21 +89,23 @@ public class Quest2 : Quest
     }
     public override bool CheckAccept()
     {
-        Debug.Log(FlowManager.GetInst.m_model.m_curChoice.m_npcActionChoiceName);
         if (FlowManager.GetInst.m_model.m_curChoice.m_npcActionChoiceName
             == NPCActionChoiceName.EllenaQuest2C1)
             return true;
 
         return false;
     }
-    public override void QuestUpdate()
-    {
 
-        Debug.Log("2");
-    }
     public override bool CheckComplete()
     {
-        return base.CheckComplete();
+
+        // 코볼트 만나면 퀘스트 깬 걸로
+        if (FlowManager.GetInst.m_model.m_curNPC.m_npcName == NPCName.Kobold)
+        {
+            Debug.Log("코볼트 퀘스트 깼음");
+            return true;
+        }
+        return false;
     }
 }
 public class Quest3 : Quest
@@ -126,11 +119,7 @@ public class Quest3 : Quest
     {
         return base.CheckAccept();
     }
-    public override void QuestUpdate()
-    {
 
-        Debug.Log("3");
-    }
     public override bool CheckComplete()
     {
         return base.CheckComplete();

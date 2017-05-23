@@ -120,12 +120,10 @@ public class NPCAction : INPCAction {
         m_desc = _data["Desc"];
     }
 
-
     public void AddChoice(NPCActionChoice _choice)
     {
         m_choiceList.Add(_choice);
     }
-
     public virtual void EffectNPCACtion()
     {
 

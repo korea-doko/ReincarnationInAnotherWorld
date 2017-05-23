@@ -96,7 +96,7 @@ public class FlowManager : MonoBehaviour,IManager
         NPC npc = NPCManager.GetInst.GetNPC(m_model.m_nextNPC);
 
         m_model.SetNPC(npc);
-
+        
         ChangeStateTo(FlowState.NPCEffect);
     }
     void NPCEffect()
@@ -107,7 +107,13 @@ public class FlowManager : MonoBehaviour,IManager
     }
     void GetActionInNPC()
     {
-        NPCAction action = m_model.m_curNPC.GetAction();
+
+        NPCAction action = null;
+
+        if (m_model.m_nextNPCAction == NPCActionName.None)
+            action = m_model.m_curNPC.GetAction();
+        else
+            action = m_model.m_curNPC.GetAction(m_model.m_nextNPCAction);
 
         m_model.SetNPCAction(action);
 
@@ -139,11 +145,15 @@ public class FlowManager : MonoBehaviour,IManager
         // m_model.m_choiceID에 따라서
         // 정해진 Choice를 수행한다.
 
+        m_model.CheckChoiceNextNPC();
+
         ChangeStateTo(FlowState.NotifyOthers);
     }
     void NotifyOhters()
     {
-        QuestManager.GetInst.GetQuestUsingParentNPC(m_model.m_curNPC.m_npcName);
+        QuestManager.GetInst.Notified();
+        PlayerManager.GetInst.Notified();
+        
 
         ChangeStateTo(FlowState.GetNPC);
     }

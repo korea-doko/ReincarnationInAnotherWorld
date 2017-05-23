@@ -28,6 +28,7 @@ public class NPCManager : MonoBehaviour ,IManager {
     }
     public void StartMgr()
     {
+
         //Debug.Log("ST NPC");
     }
     public void UpdateMgr()

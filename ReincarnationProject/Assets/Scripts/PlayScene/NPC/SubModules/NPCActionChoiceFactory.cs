@@ -22,6 +22,7 @@ public class NPCActionChoiceFactory
 
         MakeList();
         // 읽어온 데이터로 리스트 생성
+        
 
     }
     void ReadDataFromXml()

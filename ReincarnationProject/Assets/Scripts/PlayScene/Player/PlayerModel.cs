@@ -15,4 +15,5 @@ public class PlayerModel : MonoBehaviour{
     {
         m_questList.Add(_quest);
     }
+
 }

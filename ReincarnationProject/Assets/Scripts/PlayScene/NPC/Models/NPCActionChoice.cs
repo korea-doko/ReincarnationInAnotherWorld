@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,9 +7,9 @@ public enum NPCActionChoiceName
 {
      None
     
-    ,PlayerIntro1C1
-    ,PlayerIntro1C2
-    ,PlayerIntro1C3
+    ,PlayerIntro1C1 
+    ,PlayerIntro1C2 
+    ,PlayerIntro1C3 
     ,CityIntro1C1
     ,CityIntro1C2
     ,CityIntro1C3
@@ -137,10 +138,10 @@ public enum NPCActionChoiceName
     ,DeepForestNormal3C1
     ,DeepForestNormal3C2
     ,DeepForestNormal4C1
-    ,DeepForestNormal4C2
-    ,DeepForestMeetKobold1C1
-    ,DeepForestMeetKobold1C2
-    ,DeepForestMeetTroll1C1
+    , DeepForestNormal4C2
+    , DeepForestMeetKobold1C1
+    , DeepForestMeetKobold1C2
+    , DeepForestMeetTroll1C1
     ,DeepForestMeetTroll1C2
     ,DeepForestMeetTroll2C1
     ,DeepForestMeetTroll2C2
@@ -162,16 +163,22 @@ public enum NPCActionChoiceName
     ,TrollNormal1C3
     ,TrollDie1C1
     ,TrollDie1C2
+    ,DeepForestMeetKobold2C1
+    ,DeepForestMeetKobold2C2
+}
+
+public interface INPCActionChoice
+{
+    void CheckNextNPC();
 }
 [System.Serializable]
-public class NPCActionChoice
+public class NPCActionChoice : INPCActionChoice
 {
-
     public NPCActionChoiceName m_npcActionChoiceName;
     public NPCActionName m_parentNPCActionName;
 
     public string m_desc;
-
+      
     public NPCName m_nextNPCName;
     public NPCActionName m_nextNPCAction;
 
@@ -184,7 +191,7 @@ public class NPCActionChoice
         m_nextNPCName = NPCName.None;
         m_nextNPCAction = NPCActionName.None;
     }
-    
+
     public void Init(Dictionary<string,string> _data)
     {
         int id = int.Parse(_data["NPCActionChoiceName"]);
@@ -196,10 +203,15 @@ public class NPCActionChoice
         m_desc = _data["Desc"];
 
         int nextNPCid = int.Parse(_data["NextNPC"]);
+        
         m_nextNPCName = (NPCName)NPCManager.GetInst.m_model.GetNPCGivenID(nextNPCid);
 
         int nextActionid = int.Parse(_data["NextNPCAction"]);
         m_nextNPCAction = (NPCActionName)NPCManager.GetInst.m_model.GetActionGivenID(nextActionid);
+    }
+    public virtual void CheckNextNPC()
+    {
+        Debug.Log("pARENT");
     }
 }
 public class NPCActionChoice0 : NPCActionChoice
@@ -208,7 +220,7 @@ public class NPCActionChoice0 : NPCActionChoice
 }
 public class NPCActionChoice1 : NPCActionChoice
 {
-
+     
 }
 public class NPCActionChoice2 : NPCActionChoice
 {
@@ -775,7 +787,17 @@ public class NPCActionChoice132 : NPCActionChoice
 }
 public class NPCActionChoice133 : NPCActionChoice
 {
+    // 코볼트를 만났는데, 도주 하냐고 물어보는 것.
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
 
+        // 25% 로 전투 75% 로 도주
+        if (random < 25)
+            m_nextNPCName = NPCName.Kobold;
+        else
+            m_nextNPCName = NPCName.DeepForest;
+    }
 }
 public class NPCActionChoice134 : NPCActionChoice
 {
@@ -783,7 +805,16 @@ public class NPCActionChoice134 : NPCActionChoice
 }
 public class NPCActionChoice135 : NPCActionChoice
 {
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
 
+        // 25% 로 전투 75% 로 도주
+        if (random < 25)
+            m_nextNPCName = NPCName.Troll;
+        else
+            m_nextNPCName = NPCName.DeepForest;
+    }
 }
 public class NPCActionChoice136 : NPCActionChoice
 {
@@ -791,7 +822,16 @@ public class NPCActionChoice136 : NPCActionChoice
 }
 public class NPCActionChoice137 : NPCActionChoice
 {
+    public override void CheckNextNPC()
+    {
+        int random =UnityEngine.Random.Range(0, 100);
 
+        // 25% 로 전투 75% 로 도주
+        if (random < 25)
+            m_nextNPCName = NPCName.Troll;
+        else
+            m_nextNPCName = NPCName.DeepForest;
+    }
 }
 public class NPCActionChoice138 : NPCActionChoice
 {
@@ -818,7 +858,15 @@ public class NPCActionChoice142 : NPCActionChoice
 }
 public class NPCActionChoice143 : NPCActionChoice
 {
-
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
+        // 25% 로 전투 75% 로 도주
+        if (random < 25)
+            m_nextNPCName = NPCName.DeepForest;
+        else
+            m_nextNPCName = NPCName.Kobold;
+    }
 }
 public class NPCActionChoice144 : NPCActionChoice
 {
@@ -830,7 +878,15 @@ public class NPCActionChoice145 : NPCActionChoice
 }
 public class NPCActionChoice146 : NPCActionChoice
 {
-
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
+        // 25% 로 전투 75% 로 도주
+        if (random < 25)
+            m_nextNPCName = NPCName.DeepForest;
+        else
+            m_nextNPCName = NPCName.Kobold;
+    }
 }
 public class NPCActionChoice147 : NPCActionChoice
 {
@@ -854,7 +910,15 @@ public class NPCActionChoice150 : NPCActionChoice
 
 public class NPCActionChoice151 : NPCActionChoice
 {
-
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
+        // 25% 로 전투 75% 로 도주
+        if (random < 20)
+            m_nextNPCName = NPCName.DeepForest;
+        else
+            m_nextNPCName = NPCName.Troll;
+    }
 }
 public class NPCActionChoice152 : NPCActionChoice
 {
@@ -866,13 +930,37 @@ public class NPCActionChoice153 : NPCActionChoice
 }
 public class NPCActionChoice154 : NPCActionChoice
 {
-
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
+        // 25% 로 전투 75% 로 도주
+        if (random < 20)
+            m_nextNPCName = NPCName.DeepForest;
+        else
+            m_nextNPCName = NPCName.Troll;
+    }
 }
 public class NPCActionChoice155 : NPCActionChoice
 {
 
 }
 public class NPCActionChoice156 : NPCActionChoice
+{
+
+}
+public class NPCActionChoice157 : NPCActionChoice
+{
+    public override void CheckNextNPC()
+    {
+        int random = UnityEngine.Random.Range(0, 100);
+        
+        if (random < 50)
+            m_nextNPCName = NPCName.DeepForest;
+        else
+            m_nextNPCName = NPCName.Troll;
+    }
+}
+public class NPCActionChoice158 : NPCActionChoice
 {
 
 }

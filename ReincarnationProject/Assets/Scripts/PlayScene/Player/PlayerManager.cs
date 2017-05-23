@@ -40,5 +40,32 @@ public class PlayerManager : MonoBehaviour,IManager {
     {
         m_model.AddQuest(_quest);
     }
+    
+    public List<Quest> GetPlayerQuestList()
+    {
+        return m_model.m_questList;
+    }
+    public bool IsQuestClear(QuestName _name)
+    {
+        for (int i = 0; i < m_model.m_questList.Count; i++)
+        {
+            if (m_model.m_questList[i].m_questName == _name)
+                if (m_model.m_questList[i].m_isClear)
+                    return true;
+        }
+        return false;
+    }
+    public void Notified()
+    {
+        for (int i = m_model.m_questList.Count -1 ; i >= 0; i--)
+        {
+            Quest q = m_model.m_questList[i];
 
+            Debug.Log(q.m_questName.ToString());
+
+            if (q.CheckComplete())
+                m_model.m_questList.RemoveAt(i);
+            
+        }
+    }
 }

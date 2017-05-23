@@ -18,9 +18,9 @@
 "/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAADpY9WqctO+SIXD1S/3nEAVAAAAAI+RTyn07uRAAAAAAAAAAABOAFAA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAADpY9WqctO+SIXD1S/3nEAVAAAAALzk9fz37uRAAAAAAAAAAABOAFAA
 QwBBAGMAdABpAG8AbgBDAGgAbwBpAGMAZQBOAGEAbQBlAFQAYQBiAGwAZQAAAAAA
-AACIOFdCl4tzQYoO2p7ULWnaAAAAAJ09W0D07uRAAAAAAAAAAABOAFAAQwBBAGMA
+AACIOFdCl4tzQYoO2p7ULWnaAAAAAISVp0Ky7+RAAAAAAAAAAABOAFAAQwBBAGMA
 dABpAG8AbgBDAGgAbwBpAGMAZQBUAGEAYgBsAGUAAAAAAAAApYItUOFivES+s6Bl
 tdwc3AcAAADpY9WqctO+SIXD1S/3nEAVSQBEAAAAAAAAAOCU7xIwYA1MvbFP9XPz
 /vQHAAAA6WPVqnLTvkiFw9Uv95xAFU4AUABDAEEAYwB0AGkAbwBuAEMAaABvAGkA
@@ -67,7 +67,7 @@ AAAAAAAAAAAAAAAAAAAAAA==
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="4JTvEjBgDUy9sU/1c/P+9A==
 "/>
-<od:fieldProperty name="ColumnWidth" type="3" value="2865"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="5490"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="3"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
 <od:fieldProperty name="Required" type="1" value="0"/>

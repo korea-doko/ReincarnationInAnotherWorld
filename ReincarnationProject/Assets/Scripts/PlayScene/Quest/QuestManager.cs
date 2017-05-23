@@ -35,7 +35,17 @@ public class QuestManager : MonoBehaviour, IManager
 
     }
 
-    public void GetQuestUsingParentNPC(NPCName _name)
+
+    public void Notified()
+    {
+        AddQuestToPlayer(FlowManager.GetInst.m_model.m_curNPC.m_npcName);
+    }
+
+    /// <summary>
+    /// 현재 선택된 NPC에 따라서 적절하게 퀘스트가 추가 되어야 한다.
+    /// </summary>
+    /// <param name="_name"></param>
+    void AddQuestToPlayer(NPCName _name)
     {        
         for(int i = 0; i < m_model.m_questList.Count;i++)
         {
@@ -50,5 +60,5 @@ public class QuestManager : MonoBehaviour, IManager
             
             PlayerManager.GetInst.AddQuest(que);
         }        
-    }  
+    }
 }

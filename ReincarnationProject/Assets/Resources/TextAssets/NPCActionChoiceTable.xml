@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceTable.xsd" generated="2017-05-20T14:12:44">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceTable.xsd" generated="2017-05-22T13:59:54">
 <NPCActionChoiceTable>
 <ID>1</ID>
 <NPCActionChoiceName>1</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
-<Desc>1. 당황스럽지만 아무렇지 않게 있는다.</Desc>
+<Desc>1.     당황스럽지만 아무렇지 않게 있는다.</Desc>
 <NextNPC>9</NextNPC>
-<NextNPCAction>79</NextNPCAction>
+<NextNPCAction>24</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>2</ID>
 <NPCActionChoiceName>2</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
-<Desc>2. 기억을 잊은 것처럼 행동한다</Desc>
+<Desc>2.     기억을 잊은 것처럼 행동한다</Desc>
 <NextNPC>9</NextNPC>
-<NextNPCAction>79</NextNPCAction>
+<NextNPCAction>24</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>3</ID>
 <NPCActionChoiceName>3</NPCActionChoiceName>
 <ParentActionName>1</ParentActionName>
-<Desc>3. 자연스럽게 반대로 질문을 한다.</Desc>
+<Desc>3.     자연스럽게 반대로 질문을 한다.</Desc>
 <NextNPC>9</NextNPC>
-<NextNPCAction>79</NextNPCAction>
+<NextNPCAction>24</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>4</ID>
@@ -565,7 +565,7 @@
 <NPCActionChoiceName>71</NPCActionChoiceName>
 <ParentActionName>28</ParentActionName>
 <Desc>2. 아니 볼 일 없어.</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -581,7 +581,7 @@
 <NPCActionChoiceName>73</NPCActionChoiceName>
 <ParentActionName>29</ParentActionName>
 <Desc>2. 아니야! </Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -597,7 +597,7 @@
 <NPCActionChoiceName>75</NPCActionChoiceName>
 <ParentActionName>30</ParentActionName>
 <Desc>안한다</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -613,7 +613,7 @@
 <NPCActionChoiceName>77</NPCActionChoiceName>
 <ParentActionName>31</ParentActionName>
 <Desc>안한다.</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -621,7 +621,7 @@
 <NPCActionChoiceName>78</NPCActionChoiceName>
 <ParentActionName>32</ParentActionName>
 <Desc>1. 알겠어.</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -629,7 +629,7 @@
 <NPCActionChoiceName>79</NPCActionChoiceName>
 <ParentActionName>32</ParentActionName>
 <Desc>2. …</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -637,7 +637,7 @@
 <NPCActionChoiceName>80</NPCActionChoiceName>
 <ParentActionName>33</ParentActionName>
 <Desc>보상확인</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -645,7 +645,7 @@
 <NPCActionChoiceName>81</NPCActionChoiceName>
 <ParentActionName>34</ParentActionName>
 <Desc>확인</Desc>
-<NextNPC>10</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -765,7 +765,7 @@
 <NPCActionChoiceName>96</NPCActionChoiceName>
 <ParentActionName>42</ParentActionName>
 <Desc>1. 사지.</Desc>
-<NextNPC>12</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -773,7 +773,7 @@
 <NPCActionChoiceName>97</NPCActionChoiceName>
 <ParentActionName>42</ParentActionName>
 <Desc>2. 아니 관심이 없어.</Desc>
-<NextNPC>12</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -781,7 +781,7 @@
 <NPCActionChoiceName>98</NPCActionChoiceName>
 <ParentActionName>43</ParentActionName>
 <Desc>1. 사지.</Desc>
-<NextNPC>12</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -789,7 +789,7 @@
 <NPCActionChoiceName>99</NPCActionChoiceName>
 <ParentActionName>43</ParentActionName>
 <Desc>2. 아니 관심이 없어.</Desc>
-<NextNPC>12</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -806,7 +806,7 @@
 <ParentActionName>45</ParentActionName>
 <Desc>01. 물건을 사고 싶어.</Desc>
 <NextNPC>13</NextNPC>
-<NextNPCAction>46</NextNPCAction>
+<NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
 <ID>102</ID>
@@ -821,7 +821,7 @@
 <NPCActionChoiceName>103</NPCActionChoiceName>
 <ParentActionName>46</ParentActionName>
 <Desc>01. 산다.</Desc>
-<NextNPC>13</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -829,7 +829,7 @@
 <NPCActionChoiceName>104</NPCActionChoiceName>
 <ParentActionName>46</ParentActionName>
 <Desc>02. 아니 관심이 없어.</Desc>
-<NextNPC>13</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -837,7 +837,7 @@
 <NPCActionChoiceName>105</NPCActionChoiceName>
 <ParentActionName>47</ParentActionName>
 <Desc>01. 산다.</Desc>
-<NextNPC>13</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -845,7 +845,7 @@
 <NPCActionChoiceName>106</NPCActionChoiceName>
 <ParentActionName>47</ParentActionName>
 <Desc>02. 아니 관심이 없어.</Desc>
-<NextNPC>13</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -893,7 +893,7 @@
 <NPCActionChoiceName>112</NPCActionChoiceName>
 <ParentActionName>50</ParentActionName>
 <Desc>01. 고마워.</Desc>
-<NextNPC>14</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -901,7 +901,7 @@
 <NPCActionChoiceName>113</NPCActionChoiceName>
 <ParentActionName>51</ParentActionName>
 <Desc>01. 산다.</Desc>
-<NextNPC>14</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -909,7 +909,7 @@
 <NPCActionChoiceName>114</NPCActionChoiceName>
 <ParentActionName>51</ParentActionName>
 <Desc>002.안산다</Desc>
-<NextNPC>14</NextNPC>
+<NextNPC>2</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1061,7 +1061,7 @@
 <NPCActionChoiceName>133</NPCActionChoiceName>
 <ParentActionName>64</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1077,7 +1077,7 @@
 <NPCActionChoiceName>135</NPCActionChoiceName>
 <ParentActionName>66</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1093,7 +1093,7 @@
 <NPCActionChoiceName>137</NPCActionChoiceName>
 <ParentActionName>67</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1141,7 +1141,7 @@
 <NPCActionChoiceName>143</NPCActionChoiceName>
 <ParentActionName>68</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1165,7 +1165,7 @@
 <NPCActionChoiceName>146</NPCActionChoiceName>
 <ParentActionName>69</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1205,7 +1205,7 @@
 <NPCActionChoiceName>151</NPCActionChoiceName>
 <ParentActionName>71</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1229,7 +1229,7 @@
 <NPCActionChoiceName>154</NPCActionChoiceName>
 <ParentActionName>72</ParentActionName>
 <Desc>도주</Desc>
-<NextNPC>20</NextNPC>
+<NextNPC>21</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 <NPCActionChoiceTable>
@@ -1246,6 +1246,22 @@
 <ParentActionName>73</ParentActionName>
 <Desc>나가기</Desc>
 <NextNPC>3</NextNPC>
+<NextNPCAction>79</NextNPCAction>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>157</ID>
+<NPCActionChoiceName>157</NPCActionChoiceName>
+<ParentActionName>65</ParentActionName>
+<Desc>도주</Desc>
+<NextNPC>21</NextNPC>
+<NextNPCAction>79</NextNPCAction>
+</NPCActionChoiceTable>
+<NPCActionChoiceTable>
+<ID>158</ID>
+<NPCActionChoiceName>158</NPCActionChoiceName>
+<ParentActionName>65</ParentActionName>
+<Desc>싸움</Desc>
+<NextNPC>18</NextNPC>
 <NextNPCAction>79</NextNPCAction>
 </NPCActionChoiceTable>
 </dataroot>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceNameTable.xsd" generated="2017-05-19T15:26:46">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="NPCActionChoiceNameTable.xsd" generated="2017-05-22T13:47:23">
 <NPCActionChoiceNameTable>
 <ID>1</ID>
 <NPCActionChoiceName>PlayerIntro1C1</NPCActionChoiceName>
@@ -769,6 +769,16 @@
 <ID>156</ID>
 <NPCActionChoiceName>TrollDie1C2</NPCActionChoiceName>
 <GivenID>156</GivenID>
+</NPCActionChoiceNameTable>
+<NPCActionChoiceNameTable>
+<ID>157</ID>
+<NPCActionChoiceName>DeepForestMeetKobold2C1</NPCActionChoiceName>
+<GivenID>157</GivenID>
+</NPCActionChoiceNameTable>
+<NPCActionChoiceNameTable>
+<ID>158</ID>
+<NPCActionChoiceName>DeepForestMeetKobold2C2</NPCActionChoiceName>
+<GivenID>158</GivenID>
 </NPCActionChoiceNameTable>
 <NPCActionChoiceNameTable>
 <ID>115</ID>
