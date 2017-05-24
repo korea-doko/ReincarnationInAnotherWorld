@@ -167,6 +167,43 @@ public class FlowManager : MonoBehaviour,IManager
         ChangeStateTo(FlowState.GetNPC);
     }
 
+
+    public bool CompareCurNPCName(params NPCName[] _names)
+    {
+        int len = _names.Length;
+
+        for (int i = 0; i < len; i++)
+        {
+            if (_names[i] == m_model.m_curNPC.m_npcName)
+                return true;
+        }
+
+        return false;
+    }
+    public bool CompareCurActionName(params NPCActionName[] _names)
+    {
+        int len = _names.Length;
+        for (int i = 0; i < len; i++)
+        {
+            if (_names[i] == m_model.m_curAction.m_npcActionName)
+                return true;
+        }
+
+        return false;
+    }
+    public bool CompareCurChoiceName(params NPCActionChoiceName[] _names)
+    {
+        int len = _names.Length;
+        for (int i = 0; i < len; i++)
+        {
+            if (_names[i] == m_model.m_curChoice.m_npcActionChoiceName)
+                return true;
+        }
+
+        return false;
+    }
+
+
     FlowState GetCurState()
     {
         return m_model.m_curState;

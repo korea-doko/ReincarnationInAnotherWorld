@@ -20,6 +20,8 @@ public class PassiveManager : MonoBehaviour,IManager {
 
     public void AwakeMgr()
     {
+
+
         m_model = Utils.MakeObjectWithComponent<PassiveModel>("PassiveModel", this.gameObject);
         m_model.Init();
 
@@ -39,26 +41,18 @@ public class PassiveManager : MonoBehaviour,IManager {
 
     public void Notified()
     {
-        CheckPassiveToBeApplied();
+        CheckAttachPassive();
     }
-
-    void CheckPassiveToBeApplied()
+    void CheckAttachPassive()
     {
         List<Passive> passiveList = m_model.m_passiveList;
 
-        for(int i = 0; i < passiveList.Count;i++)
+        for (int i = 0; i < passiveList.Count; i++)
         {
             Passive p = passiveList[i];
 
-            if (p.m_isAccepted)
-                continue;
-
-            if (p.CheckCondition())
-                PlayerManager.GetInst.AddPassive(p);            
+            if (p.CheckAttach())
+                p.AttachPassive();
         }
-    }
-
-
-
-
+    }    
 }

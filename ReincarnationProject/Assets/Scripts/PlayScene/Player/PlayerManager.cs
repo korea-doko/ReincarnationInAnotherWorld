@@ -40,14 +40,60 @@ public class PlayerManager : MonoBehaviour,IManager {
     {
         m_model.AddQuest(_quest);
     }
-    public void AddPassive(Passive _passive)
+
+    public void AttachPassive(Passive _passive)
     {
-        m_model.AddPassive(_passive);
+        m_model.AttachPassive(_passive);
     }
+    public void DetachPassive(Passive _passive)
+    {
+        List<Passive> passiveList = m_model.m_passiveList;
+
+        for (int i = 0; i < passiveList.Count; i++)
+        {
+            if (passiveList[i].m_name == _passive.m_name)
+            {
+                m_model.DetachPassive(_passive);
+                break;
+            }
+        }
+    }
+
+    public bool IsPlayerHavingPassive(PassiveName _name)
+    {
+        for(int i = 0; i < m_model.m_passiveList.Count;i++)
+        {
+            if (m_model.m_passiveList[i].m_name == _name)
+                return true;
+        }
+
+        return false;
+    }
+    public bool IsPlayerHavingPassive(Passive _passive)
+    {
+        return IsPlayerHavingPassive(_passive.m_name);
+    }
+
+    public bool IsPlayerHavingQuest(QuestName _name)
+    {
+        for (int i = 0; i < m_model.m_questList.Count; i++)
+        {
+            if (m_model.m_questList[i].m_questName == _name)
+                return true;
+        }
+
+        return false;
+    }
+
     public List<Quest> GetPlayerQuestList()
     {
         return m_model.m_questList;
     }
+    public List<Passive> GetPlayerPassiveList()
+    {
+        return m_model.m_passiveList;
+    }
+
     public bool IsQuestClear(QuestName _name)
     {
         for (int i = 0; i < m_model.m_questList.Count; i++)
@@ -58,9 +104,29 @@ public class PlayerManager : MonoBehaviour,IManager {
         }
         return false;
     }
+
+
     public void Notified()
     {
-        for (int i = m_model.m_questList.Count -1 ; i >= 0; i--)
+        CheckQuestComplete();
+        CheckDetachPassive();
+    }
+
+    
+
+    void CheckDetachPassive()
+    {
+        for(int i = m_model.m_passiveList.Count -1; i >= 0;i--)
+        {
+            Passive p = m_model.m_passiveList[i];
+
+            if (p.CheckDetach())
+                DetachPassive(p);
+        }
+    }
+    void CheckQuestComplete()
+    {
+        for (int i = m_model.m_questList.Count - 1; i >= 0; i--)
         {
             Quest q = m_model.m_questList[i];
 
@@ -69,4 +135,5 @@ public class PlayerManager : MonoBehaviour,IManager {
             //    m_model.m_questList.RemoveAt(i);            
         }
     }
+  
 }

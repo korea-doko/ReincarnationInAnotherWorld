@@ -10,6 +10,7 @@ public class Status
     public int m_damage;
     public int m_def;
     public int m_gold;
+    public int m_hunger;
 
     public Status()
     {
@@ -17,16 +18,18 @@ public class Status
         m_damage = 0;
         m_def = 0;
         m_gold = 0;
+        m_hunger= 0;
     }
-    public Status(int _hp, int _damage, int _def, int _gold)
+    public Status(int _hp, int _damage, int _def, int _gold,int _hunger)
     {
         m_hp = _hp;
         m_damage = _damage;
         m_def = _def;
         m_gold = _gold;
+        m_hunger = _hunger;
     }
 
-    public static Status operator+(Status _s1,Status _s2)
+    public static Status operator +(Status _s1, Status _s2)
     {
         Status temp = new Status();
 
@@ -34,6 +37,19 @@ public class Status
         temp.m_damage = _s1.m_damage + _s2.m_damage;
         temp.m_def = _s1.m_def + _s2.m_def;
         temp.m_gold = _s1.m_gold + _s2.m_gold;
+        temp.m_hunger = _s1.m_hunger + _s2.m_hunger;
+
+        return temp;
+    }
+    public static Status operator -(Status _s1, Status _s2)
+    {
+        Status temp = new Status();
+
+        temp.m_hp = _s1.m_hp - _s2.m_hp;
+        temp.m_damage = _s1.m_damage - _s2.m_damage;
+        temp.m_def = _s1.m_def - _s2.m_def;
+        temp.m_gold = _s1.m_gold - _s2.m_gold;
+        temp.m_hunger = _s1.m_hunger - _s2.m_hunger;
 
         return temp;
     }

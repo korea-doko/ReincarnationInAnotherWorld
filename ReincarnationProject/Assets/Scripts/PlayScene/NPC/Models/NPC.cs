@@ -348,12 +348,14 @@ public class NPC11 : NPC
         if (m_numOfEncount == 1)
             return GetNPCUsingActionName(NPCActionName.DaisyIntro1);
 
-        int random = UnityEngine.Random.Range(0, 2);
+        int random = UnityEngine.Random.Range(0, 3);
 
         if (random == 0)
             return GetNPCUsingActionName(NPCActionName.DaisyNormal1);
-        else
+        else if (random == 1)
             return GetNPCUsingActionName(NPCActionName.DaisyNormal2);
+        else 
+            return GetNPCUsingActionName(NPCActionName.DaisySelling1);
     }
 }
 public class NPC12 : NPC

@@ -11,7 +11,7 @@ public class PlayerModel : MonoBehaviour{
 
     public void Init()
     {
-        m_status = new Status(10, 1, 1, 500);
+        m_status = new Status(10, 1, 1, 500,10);
         m_questList = new List<Quest>();
         m_passiveList = new List<Passive>();
     }
@@ -20,11 +20,21 @@ public class PlayerModel : MonoBehaviour{
     {
         m_questList.Add(_quest);
     }
-    public void AddPassive(Passive _passive)
+    public void AttachPassive(Passive _passive)
     {
-        m_status += _passive.m_deltaStatus;
         m_passiveList.Add(_passive);
+        m_status += _passive.m_deltaStatus;
     }
-
-
+    public void DetachPassive(Passive _passive)
+    {
+        for (int i = 0; i < m_passiveList.Count; i++)
+        {
+            if (m_passiveList[i].m_name == _passive.m_name)
+            {
+                m_status -= m_passiveList[i].m_deltaStatus;
+                m_passiveList.RemoveAt(i);
+                break;
+            }
+        }
+    }
 }
