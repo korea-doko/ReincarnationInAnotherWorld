@@ -78,11 +78,8 @@ public class NPC : INPC
     {
         int id = int.Parse(_data["NPCName"]);
         m_npcName = (NPCName)NPCManager.GetInst.m_model.GetNPCGivenID(id);
-
         m_desc = _data["Desc"];
-
         m_numOfEncount = 0;
-
     }
     public void AddNPCAction(NPCAction _ac)
     {

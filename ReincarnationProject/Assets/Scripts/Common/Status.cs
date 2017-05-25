@@ -28,6 +28,14 @@ public class Status
         m_gold = _gold;
         m_hunger = _hunger;
     }
+    public Status(Dictionary<string,string> _data)
+    {
+        m_hp = int.Parse(_data["DeltaHP"]);
+        m_damage = int.Parse(_data["DeltaDamage"]);
+        m_def = int.Parse(_data["DeltaDef"]);
+        m_gold = int.Parse(_data["DeltaGold"]);
+        m_hunger= int.Parse(_data["DeltaHunger"]);
+    }
 
     public static Status operator +(Status _s1, Status _s2)
     {

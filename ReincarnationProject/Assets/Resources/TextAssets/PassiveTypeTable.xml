@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="PassiveTypeTable.xsd" generated="2017-05-25T13:03:56">
+<PassiveTypeTable>
+<ID>1</ID>
+<PassiveType>Buff</PassiveType>
+<GivenID>1</GivenID>
+</PassiveTypeTable>
+<PassiveTypeTable>
+<ID>2</ID>
+<PassiveType>Equipment</PassiveType>
+<GivenID>2</GivenID>
+</PassiveTypeTable>
+<PassiveTypeTable>
+<ID>3</ID>
+<PassiveType>Consumption</PassiveType>
+<GivenID>3</GivenID>
+</PassiveTypeTable>
+<PassiveTypeTable>
+<ID>4</ID>
+<PassiveType>Stack</PassiveType>
+<GivenID>4</GivenID>
+</PassiveTypeTable>
+</dataroot>

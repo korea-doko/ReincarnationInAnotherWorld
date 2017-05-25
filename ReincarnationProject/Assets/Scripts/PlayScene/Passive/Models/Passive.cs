@@ -33,27 +33,32 @@ public interface IPassive
 public class Passive : IPassive
 {
     public PassiveName m_name;
-    public string m_desc;
     public PassiveType m_type;
+    public string m_desc;
+
     public Status m_deltaStatus;
     public int m_count;
 
-    public Passive()
+    public void Init(Dictionary<string, string> _data)
     {
-        
-        m_type = PassiveType.None;
+        int nameID = int.Parse(_data["PassiveName"]);
+        m_name = (PassiveName)PassiveManager.GetInst.m_model.GetPassiveNameGivenID(nameID);
 
-        m_count = 1;
+        int typeID = int.Parse(_data["PassiveType"]);
+        m_type = (PassiveType)PassiveManager.GetInst.m_model.GetPassiveTypeGivenID(typeID);
+
+        m_desc = _data["Desc"];
+
+        //int deltaHP = int.Parse(_data["DeltaHP"]);
+        //int deltaDamage = int.Parse(_data["DeltaDamage"]);
+        //int deltaDef = int.Parse(_data["DeltaDef"]);
+        //int deltaGold = int.Parse(_data["DeltaGold"]);
+        //int deltaHunger = int.Parse(_data["DeltaHunger"]);
+
+        m_deltaStatus = new Status(_data);
+        m_count = int.Parse(_data["Count"]);
     }
-    public Passive(Dictionary<string, string> _data)
-    {
 
-        m_type = PassiveType.None;
-
-        m_count = 0;
-    }
-
-    
     public virtual bool CheckAttach()
     {
         return false;
@@ -62,7 +67,6 @@ public class Passive : IPassive
     {
 
     }
-
     public virtual bool CheckDetach()
     {
         if (m_count <= 0)
@@ -83,7 +87,6 @@ public class Passive0 : Passive
     {
         base.AttachPassive();
     }
- 
     public override bool CheckDetach()
     {
         return base.CheckDetach();
@@ -92,13 +95,7 @@ public class Passive0 : Passive
 public class Passive1 : Passive
 {
     // 축복
-    public Passive1()
-    {
-        m_name = PassiveName.Blessing;
-        m_deltaStatus = new Status(1, 1, 1, 0,0);
-        m_desc = m_name.ToString() + "desc";
-    }
-
+    
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurNPCName(NPCName.Jerome))
@@ -106,7 +103,6 @@ public class Passive1 : Passive
 
         return base.CheckAttach();
     }
-
     public override void AttachPassive()
     {
         if (PlayerManager.GetInst.IsPlayerHavingPassive(m_name))
@@ -114,22 +110,16 @@ public class Passive1 : Passive
 
         PlayerManager.GetInst.AttachPassive(this);        
     }
-   
     public override bool CheckDetach()
     {
         m_count--;
         return base.CheckDetach();
-    }   
+    }
+
 }
 public class Passive2 : Passive
 {
     // 상처
-    public Passive2()
-    {
-        m_name = PassiveName.Injury;
-        m_deltaStatus = new Status(-1, -1, -1, 0,0);
-        m_desc = m_name.ToString() + "desc";
-    }
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurNPCName(NPCName.Kobold, NPCName.Troll))
@@ -154,12 +144,7 @@ public class Passive2 : Passive
 public class Passive3 : Passive
 {
     // 검
-    public Passive3()
-    {
-        m_name = PassiveName.Sword;
-        m_deltaStatus = new Status(0, 3, 0, 0,0);
-        m_desc = m_name.ToString() + "desc";
-    }    
+     
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurChoiceName(NPCActionChoiceName.PeytonSellingSword1C1))
@@ -197,12 +182,7 @@ public class Passive4 : Passive
 {
     // 갑옷
 
-    public Passive4()
-    {
-        m_name = PassiveName.Armor;
-        m_deltaStatus = new Status(0, 0, 3, 0,0);
-        m_desc = m_name.ToString() + "desc";
-    }
+    
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurChoiceName(NPCActionChoiceName.PeytonSellingArmor1C1))
@@ -239,12 +219,7 @@ public class Passive4 : Passive
 public class Passive5 : Passive
 {
     // 힐링포션
-    public Passive5()
-    {
-        m_name = PassiveName.HealingPotion;
-        m_deltaStatus = new Status();
-        m_desc = m_name.ToString() + "desc";
-    }
+   
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurChoiceName(
@@ -261,7 +236,6 @@ public class Passive5 : Passive
         m_count++;
 
     }
-
     public override bool CheckDetach()
     {
         if( PlayerManager.GetInst.m_model.m_status.m_hp <= 5)
@@ -277,13 +251,7 @@ public class Passive5 : Passive
 public class Passive6 : Passive
 {
     // 빵
-    public Passive6()
-    {
-        m_name = PassiveName.Bread;
-        m_deltaStatus = new Status();
-        m_desc = m_name.ToString() + "desc";
-    }
-
+    
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurChoiceName(
@@ -314,12 +282,7 @@ public class Passive6 : Passive
 public class Passive7 :Passive
 {
     //코볼트 고기
-    public Passive7()
-    {
-        m_name = PassiveName.KoboldMeet;
-        m_deltaStatus = new Status();
-        m_desc = m_name.ToString() + "desc";
-    }
+   
 
     public override bool CheckAttach()
     {
@@ -350,13 +313,7 @@ public class Passive7 :Passive
 }
 public class Passive8 : Passive
 {
-    //트롤 고기
-    public Passive8()
-    {
-        m_name = PassiveName.TrollMeet;
-        m_deltaStatus = new Status();
-        m_desc = m_name.ToString() + "desc";
-    }
+   //트롤고기   
 
     public override bool CheckAttach()
     {
