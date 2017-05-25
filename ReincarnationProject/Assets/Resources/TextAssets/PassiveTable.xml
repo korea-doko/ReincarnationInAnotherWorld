@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="PassiveTable.xsd" generated="2017-05-25T14:21:13">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="PassiveTable.xsd" generated="2017-05-25T16:23:04">
 <PassiveTable>
 <ID>1</ID>
 <PassiveName>1</PassiveName>
@@ -69,7 +69,7 @@
 <DeltaDamage>0</DeltaDamage>
 <DeltaDef>0</DeltaDef>
 <DeltaGold>0</DeltaGold>
-<DeltaHunger>10</DeltaHunger>
+<DeltaHunger>-10</DeltaHunger>
 <Count>1</Count>
 </PassiveTable>
 <PassiveTable>

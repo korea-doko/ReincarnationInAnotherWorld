@@ -50,17 +50,25 @@ public struct PassiveTypeSt
 
 public class PassiveModel : MonoBehaviour
 {
-    public List<Passive> m_passiveList;
 
+    int[] m_numOfPassiveType;
+
+    public List<Passive> m_passiveList;
     public List<PassiveNameSt> m_nameStList;
     public List<PassiveTypeSt> m_typeStList;
     
-
     private List<Dictionary<string, string>> m_fullDic = new List<Dictionary<string, string>>();  // every item info from DB
 
 
     public void Init()
     {
+        int numOfType = System.Enum.GetNames(typeof(PassiveType)).Length;
+
+        m_numOfPassiveType = new int[numOfType];
+        for (int i = 0; i < numOfType; i++)
+            m_numOfPassiveType[i] = 0;
+
+
         ReadPassiveNameFromXML();
         MakePassiveNameList();
         // PassiveName 데이터 읽어오기
@@ -70,9 +78,37 @@ public class PassiveModel : MonoBehaviour
         // PassiveType 데이터 읽어오기
 
         ReadPassiveFromXML();
-        MakePassiveList();
+        //MakePassiveList();
+        Test();
         // 위에서 읽어온 데이터를 이용하여 Passive 생성한다.
     }
+
+    public int GetPassiveTypeGivenID(int _id)
+    {
+        for (int i = 0; i < m_typeStList.Count; i++)
+        {
+            if (m_typeStList[i].GetGivenID(_id) != -1)
+                return m_typeStList[i].GetGivenID(_id);
+        }
+
+        Debug.Log("Passive Type Table Error, inputID =" + _id.ToString());
+        return -1;
+    }
+    public int GetPassiveNameGivenID(int _id)
+    {
+        for (int i = 0; i < m_nameStList.Count; i++)
+        {
+            if (m_nameStList[i].GetGivenID(_id) != -1)
+                return m_nameStList[i].GetGivenID(_id);
+        }
+
+
+        Debug.Log("Passive Name Table Error, inputID =" + _id.ToString());
+        return -1;
+    }
+
+
+
 
     void ReadPassiveNameFromXML()
     {
@@ -223,6 +259,7 @@ public class PassiveModel : MonoBehaviour
 
         int numOfPassive = Enum.GetNames(typeof(PassiveName)).Length;
 
+
         for (int i = 0; i < numOfPassive; i++)
         {
             string name = "Passive" + i.ToString();
@@ -231,11 +268,11 @@ public class PassiveModel : MonoBehaviour
             m_passiveList.Add(p);
         }
 
-        for(int i = 0; i < m_passiveList.Count;i++)
+        for (int i = 0; i < m_passiveList.Count; i++)
         {
             Passive p = m_passiveList[i];
 
-            for(int k = 0; k < m_fullDic.Count;k++)
+            for (int k = 0; k < m_fullDic.Count; k++)
             {
                 Dictionary<string, string> data = m_fullDic[k];
 
@@ -245,31 +282,59 @@ public class PassiveModel : MonoBehaviour
                 if (i != givenID)
                     continue;
 
-                p.Init(data);                    
+                p.Init(data);
             }
         }
     }
-    public int GetPassiveTypeGivenID(int _id)
+
+    void Test()
     {
-        for(int i = 0; i < m_typeStList.Count;i++)
+        m_passiveList = new List<Passive>();
+
+        int numOfPassive = Enum.GetNames(typeof(PassiveName)).Length;
+
+
+        for (int i = 0; i < m_fullDic.Count; i++)
         {
-            if (m_typeStList[i].GetGivenID(_id) != -1)
-                return m_typeStList[i].GetGivenID(_id);
+            Dictionary<string, string> data = m_fullDic[i];
+
+            int passiveTypeID = int.Parse(data["PassiveType"]);
+            int passiveTypeGivenID = PassiveManager.GetInst.m_model.GetPassiveTypeGivenID(passiveTypeID);
+            PassiveType type = (PassiveType)passiveTypeGivenID;
+            string passiveName = "";
+            
+            switch (type)
+            {
+                case PassiveType.Buff:
+                    passiveName = "BuffPassive" + m_numOfPassiveType[(int)PassiveType.Buff].ToString();
+                    m_numOfPassiveType[(int)PassiveType.Buff]++;
+                    
+                    break;
+                case PassiveType.Equipment:
+                    passiveName = "EquipmentPassive" + m_numOfPassiveType[(int)PassiveType.Equipment].ToString();
+                    m_numOfPassiveType[(int)PassiveType.Equipment]++;
+
+                    break;
+                case PassiveType.Consumption:
+                    passiveName = "ConsumptionPassive" + m_numOfPassiveType[(int)PassiveType.Consumption].ToString();
+                    m_numOfPassiveType[(int)PassiveType.Consumption]++;
+
+                    break;
+                case PassiveType.Stack:
+                    passiveName = "StackPassive" + m_numOfPassiveType[(int)PassiveType.Stack].ToString();
+                    m_numOfPassiveType[(int)PassiveType.Stack]++;
+
+                    break;
+                case PassiveType.None:
+                default:
+                    Debug.Log("Error");
+                    break;
+            }
+
+            object obj = Activator.CreateInstance(Type.GetType(passiveName));
+            Passive p = (Passive)obj;
+            p.Init(data);
+            m_passiveList.Add(p);
         }
-
-        Debug.Log("Passive Type Table Error, inputID =" + _id.ToString());
-        return -1;
-    }
-    public int GetPassiveNameGivenID(int _id)
-    {
-        for (int i = 0; i < m_nameStList.Count; i++)
-        {
-            if (m_nameStList[i].GetGivenID(_id) != -1)
-                return m_nameStList[i].GetGivenID(_id);
-        }
-
-
-        Debug.Log("Passive Name Table Error, inputID =" + _id.ToString());
-        return -1;
     }
 }

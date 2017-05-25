@@ -47,9 +47,8 @@ public class QuestManager : MonoBehaviour, IManager
     /// <param name="_name"></param>
     void AddQuestToPlayer(NPCName _name)
     {
-        List<Quest> playerQuestList = PlayerManager.GetInst.GetPlayerQuestList();
 
-        for(int i = 0; i < m_model.m_questList.Count;i++)
+        for (int i = 0; i < m_model.m_questList.Count;i++)
         {
             Quest que = m_model.m_questList[i];
 

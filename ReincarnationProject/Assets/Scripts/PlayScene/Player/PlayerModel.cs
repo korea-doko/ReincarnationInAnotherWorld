@@ -23,17 +23,32 @@ public class PlayerModel : MonoBehaviour{
     public void AttachPassive(Passive _passive)
     {
         m_passiveList.Add(_passive);
+
+        if (_passive.m_type == PassiveType.Consumption)
+            return;
+        if (_passive.m_type == PassiveType.Stack)
+            return;
+
         m_status += _passive.m_deltaStatus;
     }
     public void DetachPassive(Passive _passive)
     {
         for (int i = 0; i < m_passiveList.Count; i++)
         {
-            if (m_passiveList[i].m_name == _passive.m_name)
+            Passive p = m_passiveList[i];
+
+            if (p.m_name == _passive.m_name)
             {
-                m_status -= m_passiveList[i].m_deltaStatus;
                 m_passiveList.RemoveAt(i);
-                break;
+
+                if (p.m_type == PassiveType.Consumption)
+                    break;
+                if (p.m_type == PassiveType.Stack)
+                    break;
+
+
+                m_status -= m_passiveList[i].m_deltaStatus;
+                break;                
             }
         }
     }

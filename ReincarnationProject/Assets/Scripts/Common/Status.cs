@@ -61,4 +61,16 @@ public class Status
 
         return temp;
     }
+    public static Status operator *(int _multiflier, Status _s)
+    {
+        Status temp = new Status();
+
+        temp.m_hp = _multiflier * _s.m_hp;
+        temp.m_damage = _multiflier * _s.m_damage;
+        temp.m_def = _multiflier * _s.m_def;
+        temp.m_gold  = _multiflier * _s.m_gold;
+        temp.m_hunger = _multiflier * _s.m_hunger;
+
+        return temp;
+    }
 }
