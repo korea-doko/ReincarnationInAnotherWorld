@@ -47,7 +47,9 @@ public class PlayerModel : MonoBehaviour{
                     break;
 
 
-                m_status -= m_passiveList[i].m_deltaStatus;
+                m_status -= p.m_deltaStatus;
+                p.Clear();
+
                 break;                
             }
         }

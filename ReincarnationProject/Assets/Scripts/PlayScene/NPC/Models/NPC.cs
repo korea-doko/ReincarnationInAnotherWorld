@@ -509,8 +509,10 @@ public class NPC18 : NPC
             return GetNPCUsingActionName(NPCActionName.KoboldIntro1);
 
         if (m_numOfEncount == 3)
+        {
+            m_numOfEncount = 0;
             return GetNPCUsingActionName(NPCActionName.KoboldDie1);
-
+        }
         return GetNPCUsingActionName(NPCActionName.KoboldNormal1);
     }
 }

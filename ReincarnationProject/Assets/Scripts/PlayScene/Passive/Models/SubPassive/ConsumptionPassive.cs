@@ -26,7 +26,6 @@ public class ConsumptionPassive0 : ConsumptionPassive
 
         return false;
     }
-
     public override bool CheckDetach()
     {
         if (PlayerManager.GetInst.m_model.m_status.m_hp <= 5)
@@ -49,8 +48,7 @@ public class ConsumptionPassive1 : ConsumptionPassive
             return true;
 
         return base.CheckAttach();
-    }
-   
+    } 
     public override bool CheckDetach()
     {
         if (PlayerManager.GetInst.m_model.m_status.m_hunger >= 20)
@@ -60,6 +58,35 @@ public class ConsumptionPassive1 : ConsumptionPassive
             PlayerManager.GetInst.m_model.m_status += m_deltaStatus;
         }
 
+        return base.CheckDetach();
+    }
+}
+public class ConsumptionPassive2 : ConsumptionPassive
+{
+    // 신선한 물
+
+    public override bool CheckAttach()
+    {
+        if( FlowManager.GetInst.CompareCurNPCName(
+            NPCName.Forest,
+            NPCName.DeepForest))
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+
+            if (random < 20)
+                return true;
+
+        }
+        return base.CheckAttach();
+    }
+    public override bool CheckDetach()
+    {
+        if (PlayerManager.GetInst.m_model.m_status.m_hunger >= 20)
+        {
+            m_curCount--;
+
+            PlayerManager.GetInst.m_model.m_status += m_deltaStatus;
+        }
         return base.CheckDetach();
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EquipmentPassive : Passive
 {
-
     public override void AttachPassive()
     {
         if (!PlayerManager.GetInst.IsPlayerHavingPassive(this))
@@ -14,7 +13,6 @@ public class EquipmentPassive : Passive
 public class EquipmentPassive0 : EquipmentPassive
 {
     // 검
-
     public override bool CheckAttach()
     {
         if (FlowManager.GetInst.CompareCurChoiceName(NPCActionChoiceName.PeytonSellingSword1C1))
@@ -45,6 +43,70 @@ public class EquipmentPassive0 : EquipmentPassive
 }
 public class EquipmentPassive1 : EquipmentPassive
 {
+    // 갑옷
+    public override bool CheckAttach()
+    {
+        if (FlowManager.GetInst.CompareCurChoiceName(NPCActionChoiceName.PeytonSellingArmor1C1))
+            return true;
+
+        return base.CheckAttach();
+    }
+    public override bool CheckDetach()
+    {
+        if (FlowManager.GetInst.CompareCurChoiceName(
+            NPCActionChoiceName.TrollIntro1C1,
+            NPCActionChoiceName.TrollIntro1C2,
+            NPCActionChoiceName.TrollNormal1C1,
+            NPCActionChoiceName.TrollNormal1C2,
+            NPCActionChoiceName.KoboldIntro1C1,
+            NPCActionChoiceName.KoboldIntro1C2,
+            NPCActionChoiceName.KoboldNormal1C1,
+            NPCActionChoiceName.KoboldNormal1C2))
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+
+            if (random < 20)
+                m_curCount--;
+        }
+
+        return base.CheckDetach();
+    }
+}
+public class EquipmentPassive2 : EquipmentPassive
+{
+    //브로드 소드
+    // 검
+    public override bool CheckAttach()
+    {
+        if (FlowManager.GetInst.CompareCurChoiceName(NPCActionChoiceName.PeytonSellingSword1C1))
+            return true;
+
+        return base.CheckAttach();
+    }
+    public override bool CheckDetach()
+    {
+        if (FlowManager.GetInst.CompareCurChoiceName(
+            NPCActionChoiceName.TrollIntro1C1,
+            NPCActionChoiceName.TrollIntro1C2,
+            NPCActionChoiceName.TrollNormal1C1,
+            NPCActionChoiceName.TrollNormal1C2,
+            NPCActionChoiceName.KoboldIntro1C1,
+            NPCActionChoiceName.KoboldIntro1C2,
+            NPCActionChoiceName.KoboldNormal1C1,
+            NPCActionChoiceName.KoboldNormal1C2))
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+
+            if (random < 20)
+                m_curCount--;
+        }
+
+        return base.CheckDetach();
+    }
+}
+public class EquipmentPassive3 : EquipmentPassive
+{
+    // 체인매일
     // 갑옷
     public override bool CheckAttach()
     {

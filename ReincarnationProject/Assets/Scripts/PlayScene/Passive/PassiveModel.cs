@@ -51,7 +51,7 @@ public struct PassiveTypeSt
 public class PassiveModel : MonoBehaviour
 {
 
-    int[] m_numOfPassiveType;
+    public int[] m_numOfPassiveType;
 
     public List<Passive> m_passiveList;
     public List<PassiveNameSt> m_nameStList;
@@ -78,8 +78,8 @@ public class PassiveModel : MonoBehaviour
         // PassiveType 데이터 읽어오기
 
         ReadPassiveFromXML();
-        //MakePassiveList();
-        Test();
+        MakePassiveList();
+
         // 위에서 읽어온 데이터를 이용하여 Passive 생성한다.
     }
 
@@ -106,9 +106,6 @@ public class PassiveModel : MonoBehaviour
         Debug.Log("Passive Name Table Error, inputID =" + _id.ToString());
         return -1;
     }
-
-
-
 
     void ReadPassiveNameFromXML()
     {
@@ -254,40 +251,6 @@ public class PassiveModel : MonoBehaviour
         }
     }
     void MakePassiveList()
-    {
-        m_passiveList = new List<Passive>();
-
-        int numOfPassive = Enum.GetNames(typeof(PassiveName)).Length;
-
-
-        for (int i = 0; i < numOfPassive; i++)
-        {
-            string name = "Passive" + i.ToString();
-            object obj = Activator.CreateInstance(Type.GetType(name));
-            Passive p = (Passive)obj;
-            m_passiveList.Add(p);
-        }
-
-        for (int i = 0; i < m_passiveList.Count; i++)
-        {
-            Passive p = m_passiveList[i];
-
-            for (int k = 0; k < m_fullDic.Count; k++)
-            {
-                Dictionary<string, string> data = m_fullDic[k];
-
-                int id = int.Parse(data["PassiveName"]);
-                int givenID = PassiveManager.GetInst.m_model.GetPassiveNameGivenID(id);
-
-                if (i != givenID)
-                    continue;
-
-                p.Init(data);
-            }
-        }
-    }
-
-    void Test()
     {
         m_passiveList = new List<Passive>();
 

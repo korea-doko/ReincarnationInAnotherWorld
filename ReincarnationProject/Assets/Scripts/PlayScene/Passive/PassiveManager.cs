@@ -20,8 +20,6 @@ public class PassiveManager : MonoBehaviour,IManager {
 
     public void AwakeMgr()
     {
-
-
         m_model = Utils.MakeObjectWithComponent<PassiveModel>("PassiveModel", this.gameObject);
         m_model.Init();
 

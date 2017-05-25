@@ -21,7 +21,12 @@ public enum PassiveName
     HealingPotion,
     Bread,
     KoboldMeet,
-    TrollMeet
+    TrollMeet,
+    Terror,
+    BroadSword,
+    Chainmail,
+    KoboldBlood,
+    FreshWater,
 }
 public interface IPassive
 {
@@ -82,7 +87,7 @@ public class Passive : IPassive
         return false;
     }
 
-    void Clear()
+    public void Clear()
     {
         m_curCount = m_maxCount;
     }

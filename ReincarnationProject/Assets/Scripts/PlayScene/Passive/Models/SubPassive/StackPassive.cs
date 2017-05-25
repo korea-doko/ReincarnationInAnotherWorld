@@ -39,8 +39,7 @@ public class StackPassive0 : StackPassive
             return true;
 
         return base.CheckAttach();
-    }
-  
+    }  
     public override bool CheckDetach()
     {
         if (FlowManager.GetInst.CompareCurNPCName(
@@ -62,7 +61,32 @@ public class StackPassive1 : StackPassive
 
         return base.CheckAttach();
     }
- 
+    public override bool CheckDetach()
+    {
+        if (FlowManager.GetInst.CompareCurNPCName(
+            NPCName.Ellena))
+            m_isDetach = true;
+
+        return base.CheckDetach();
+    }
+}
+public class StackPassive2 : StackPassive
+{
+    // 코볼트 피
+    public override bool CheckAttach()
+    {
+        if (FlowManager.GetInst.CompareCurActionName(
+            NPCActionName.KoboldDie1))
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+
+            if (random < 10)
+                return true;
+                 
+        }
+            
+        return base.CheckAttach();
+    }
     public override bool CheckDetach()
     {
         if (FlowManager.GetInst.CompareCurNPCName(

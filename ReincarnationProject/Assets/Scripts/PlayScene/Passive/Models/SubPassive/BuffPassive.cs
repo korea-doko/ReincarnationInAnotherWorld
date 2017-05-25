@@ -41,3 +41,24 @@ public class BuffPassive1 : BuffPassive
         return base.CheckAttach();
     }  
 }
+public class BuffPassive2 : BuffPassive
+{
+    // 공포
+
+    public override bool CheckAttach()
+    {
+        if( FlowManager.GetInst.CompareCurNPCName(NPCName.Kobold))
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+            if (random < 10)
+                return true;               
+        }
+        if( FlowManager.GetInst.CompareCurNPCName(NPCName.Troll))
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+            if (random < 20)
+                return true;
+        }
+        return base.CheckAttach();
+    }
+}
