@@ -6,11 +6,11 @@ using UnityEngine;
 [System.Serializable]
 public class Status
 {
-    public int m_hp;
-    public int m_damage;
-    public int m_def;
-    public int m_gold;
-    public int m_hunger;
+    public int m_hp;                // 체력
+    public int m_damage;            // 데미지
+    public int m_def;               // 방어력
+    public int m_gold;              // 골드
+    public int m_hunger;            // 배고픔
 
     public Status()
     {
