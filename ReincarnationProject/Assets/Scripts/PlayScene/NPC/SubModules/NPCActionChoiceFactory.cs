@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Xml;
-
+using System.Reflection;
 
 
 [System.Serializable]
@@ -15,16 +15,18 @@ public class NPCActionChoiceFactory
 
     public NPCActionChoiceFactory()
     {
-        m_actionChoiceList = new List<NPCActionChoice>();
        
         ReadDataFromXml();
         //  데이터 읽어오기
 
         MakeList();
         // 읽어온 데이터로 리스트 생성
-        
 
+        SetDelegate();
+        // 만약에 다음으로 와야하는 NPC가 None이면 적절한 Delegate를 만들어줘야만 한다. 따라서 
+        // 그것을 작업하는 곳.
     }
+
     void ReadDataFromXml()
     {
         TextAsset textAsset = (TextAsset)Resources.Load("TextAssets/NPCActionChoiceTable");
@@ -70,33 +72,57 @@ public class NPCActionChoiceFactory
             m_fullDic.Add(partialDic);
         }
     }
-
     void MakeList()
     {
+        m_actionChoiceList = new List<NPCActionChoice>();
+
         int numOfChoice = System.Enum.GetNames(typeof(NPCActionChoiceName)).Length;
 
-        for (int i = 0; i < numOfChoice; i++)
+        
+        for(int i = 0; i < numOfChoice;i++)
         {
-            string name = "NPCActionChoice" + i.ToString();
-            object obj = Activator.CreateInstance(Type.GetType(name));
-            NPCActionChoice choice = (NPCActionChoice)obj;
-            m_actionChoiceList.Add(choice);
-        }
+            NPCActionChoice choice = new NPCActionChoice();
 
-        for (int i = 0; i < m_actionChoiceList.Count; i++)
-        {
             for (int k = 0; k < m_fullDic.Count; k++)
             {
                 Dictionary<string, string> data = m_fullDic[k];
+
                 int id = int.Parse(data["NPCActionChoiceName"]);
                 int givenID = NPCManager.GetInst.m_model.GetChoiceGivenID(id);
 
                 if (i != givenID)
                     continue;
 
-                m_actionChoiceList[i].Init(data);
-                break;
+                choice.Init(data);
             }
+
+            m_actionChoiceList.Add(choice);
+        }       
+    }
+    void SetDelegate()
+    {
+        Type delContainerType = Type.GetType("ConditionalChoice");
+        ConstructorInfo conInfo = delContainerType.GetConstructor(Type.EmptyTypes);
+        object containerObj = conInfo.Invoke(new object[] { });
+        
+        for (int i = 0; i < m_actionChoiceList.Count;i++)
+        {
+            NPCActionChoice choice = m_actionChoiceList[i];
+
+            if (choice.m_nextNPCName != NPCName.None)
+                continue;
+            if (choice.m_npcActionChoiceName == NPCActionChoiceName.None)
+                continue;
+
+            // 여기에 도달을 한다면, 조건부
+            // 따라서 적절한 대리자를 연결시켜준다.           
+
+            string name = "Del" + choice.m_npcActionChoiceName.ToString();
+            Debug.Log(name);
+            MethodInfo methodInfo = delContainerType.GetMethod(name);
+            DelCheckNextNPC delCheck = (DelCheckNextNPC)Delegate.CreateDelegate(typeof(DelCheckNextNPC), methodInfo);
+            choice.m_delCheckNextNPC = delCheck;                
         }
     }
+   
 }
